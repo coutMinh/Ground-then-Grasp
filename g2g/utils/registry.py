@@ -1,4 +1,4 @@
-"""Run provenance. Registry entries are appended only for completed runs."""
+"""Run provenance, including failed/debug runs, with process-safe CSV writes."""
 
 from __future__ import annotations
 
@@ -6,8 +6,9 @@ import csv
 import platform
 import re
 import subprocess
-import time
 from pathlib import Path
+
+from filelock import FileLock
 
 FIELDS = [
     "run_id",
@@ -60,18 +61,9 @@ def append_registry(root: str | Path, record: dict) -> None:
     path = Path(root) / "registry.csv"
     path.parent.mkdir(parents=True, exist_ok=True)
     # Prevent two writers from corrupting an experiment registry.
-    lock = path.with_suffix(".lock")
-    deadline = time.monotonic() + 5
-    while True:
-        try:
-            with lock.open("x"):
-                pass
-            break
-        except FileExistsError:
-            if time.monotonic() >= deadline:
-                raise TimeoutError("Registry writer lock did not clear within 5 seconds.") from None
-            time.sleep(0.02)
-    try:
+    # OS-backed locking avoids Windows races around creating/deleting lock files.
+    # The sidecar may remain on disk after release; it is not itself a held lock.
+    with FileLock(str(path.with_suffix(".lock")), timeout=5):
         if path.exists():
             with path.open(newline="", encoding="utf-8") as stream:
                 reader = csv.DictReader(stream)
@@ -85,5 +77,3 @@ def append_registry(root: str | Path, record: dict) -> None:
             if new_file:
                 writer.writeheader()
             writer.writerow(record)
-    finally:
-        lock.unlink()

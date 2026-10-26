@@ -26,7 +26,7 @@ def test_registry_duplicate_does_not_leave_stale_lock(tmp_path):
     append_registry(tmp_path, record)
     with pytest.raises(ValueError, match="already registered"):
         append_registry(tmp_path, record)
-    assert not (tmp_path / "registry.lock").exists()
+    # FileLock may retain an unlocked sidecar. The next append must succeed.
     record["run_id"] = "next-fixture"
     append_registry(tmp_path, record)
     with (tmp_path / "registry.csv").open(newline="") as stream:

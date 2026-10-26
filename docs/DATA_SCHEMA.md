@@ -104,11 +104,11 @@ Reproducible evidence is their SHA-256 plus the generated
 [`upstream_splits.json`](upstream_splits.json) (line-numbered JSON), produced by
 `g2g/inspection/upstream.py:read_split` and `:audit_upstream`.
 
-| File | Entries (objects) | Unique images |
-|---|---:|---:|
-| train/seen.obj | 14,516 | 11,616 |
-| test/seen.obj | 573 | 420 |
-| test/unseen.obj | 230 | 200 |
+| File | Entries (objects) | Unique images | Line-numbered count evidence |
+|---|---:|---:|---|
+| train/seen.obj | 14,516 | 11,616 | `docs/upstream_splits.json:29–30` |
+| test/seen.obj | 573 | 420 | `docs/upstream_splits.json:7–8` |
+| test/unseen.obj | 230 | 200 | `docs/upstream_splits.json:18–19` |
 
 - Each primitive list entry is `<64-hex-image-id>_<object-id>`, not a part row.
   `grasp_anywhere_data.py:38`, `:43` strips the final `_<part>.pt` for its

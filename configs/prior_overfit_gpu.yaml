@@ -1,0 +1,15 @@
+# Full-capacity GPU diagnostic. Use 32 train images: 25 epochs * 8 batches = 200 steps.
+task: prior
+seed: 42
+resolution: 160
+channel_size: 32
+epochs: 25
+batch_size: 4
+learning_rate: 0.001
+weight_decay: 0.0001
+warmup_steps: 0
+grad_clip: 1.0
+num_workers: 0
+amp: true
+amp_dtype: bf16
+cpu_threads: 2

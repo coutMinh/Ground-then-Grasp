@@ -8,6 +8,7 @@ version = "0.1.0"
 description = "Reproducible factorized language-driven grasp detection"
 requires-python = ">=3.11"
 dependencies = [
+  "filelock>=3.13,<4",
   "numpy>=1.26,<3",
   "Pillow>=10,<13",
   "PyYAML>=6,<7",
