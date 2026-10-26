@@ -1,4 +1,4 @@
-# Ground First, Then Grasp
+# Ground-then-Grasp
 
 Factorized language-driven 2D grasp detection: a language-free GR-ConvNet prior
 is combined with a CLIPSeg part grounder through soft quality/mask composition
