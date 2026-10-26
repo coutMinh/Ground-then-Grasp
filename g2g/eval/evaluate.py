@@ -64,9 +64,12 @@ def evaluate(
     model_id: str = "CIDAS/clipseg-rd64-refined",
     model_revision: str = "main",
     compose_config: str | None = None,
+    union_targets: bool = False,
 ) -> dict:
     if system not in SYSTEMS or purpose not in {"debug", "benchmark"}:
         raise ValueError("Unknown evaluation system or purpose.")
+    if union_targets and (system != "prior" or purpose != "debug"):
+        raise ValueError("Union-target evaluation is a prior-only debug diagnostic.")
     if system in {"ft_hard", "soft", "ours", "mask_peak"} and not grounder_checkpoint:
         raise ValueError("This system requires a fine-tuned grounder checkpoint.")
     selection = None
@@ -89,7 +92,9 @@ def evaluate(
         raise ValueError("Expected a prior checkpoint.")
     resolution = prior_config["resolution"]
     torch.set_num_threads(prior_config["cpu_threads"])
-    dataset = GraspDataset(manifest, data_root, resolution=resolution)
+    dataset = GraspDataset(
+        manifest, data_root, resolution=resolution, task="prior" if union_targets else "instruction"
+    )
     loader = DataLoader(dataset, batch_size=1, shuffle=False, collate_fn=collate_samples)
     split = dataset.rows[0]["split"]
     mode = {
@@ -120,6 +125,7 @@ def evaluate(
         "composition": asdict(composition),
         "resolution": resolution,
         "val_selection": selection,
+        "target_scope": "scene_union" if union_targets else "instruction",
         "iou_mode": "pixel",
         "iou_threshold": 0.25,
         "angle_boundary": "<=30 degrees",
@@ -168,7 +174,7 @@ def evaluate(
                 grasp = detect_grasp(maps, mask, config=composition, mask_is_logits=logits)
                 if grasp is not None:
                     grasp = grasp.scaled(batch["original_size"][0] / resolution)
-                match = match_grasp(grasp, batch["gt_rects"][0])
+                match = match_grasp(grasp, batch["union_rects" if union_targets else "gt_rects"][0])
                 target_mask = batch["original_mask"][0]
                 point_in_part = False
                 if grasp is not None:
@@ -185,6 +191,8 @@ def evaluate(
                     **asdict(match),
                     "point_in_part": point_in_part,
                 }
+                if union_targets:
+                    record.update(instruction=None, point_in_part=None)
                 stream.write(json.dumps(record, allow_nan=False) + "\n")
                 records.append(record)
         metrics.update(
@@ -192,7 +200,8 @@ def evaluate(
             count=len(records),
             success_rate=sum(record["success"] for record in records) / len(records),
             grounding_miou=float(np.mean(mask_ious)) if mask_ious else None,
-            decomposition=decomposition(records),
+            decomposition=None if union_targets else decomposition(records),
+            target_scope="scene_union" if union_targets else "instruction",
         )
     except Exception as error:
         metrics["error_type"] = type(error).__name__

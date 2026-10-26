@@ -116,8 +116,19 @@ def test_resume_reproduces_uninterrupted_training_and_evaluation(native_fixture,
     )
     assert metrics["count"] == 2
     assert metrics["status"] == "completed"
+    union_metrics = evaluate(
+        str(manifest),
+        str(root),
+        str(results / "runs/full/best.pt"),
+        str(results),
+        "union_eval",
+        system="prior",
+        union_targets=True,
+    )
+    assert union_metrics["count"] == 4
+    assert union_metrics["decomposition"] is None
     with (results / "registry.csv").open() as stream:
-        assert len(list(csv.DictReader(stream))) == 4
+        assert len(list(csv.DictReader(stream))) == 5
 
 
 def test_multi_digit_part_ids_and_no_path_traversal():

@@ -89,6 +89,9 @@ def main(argv: list[str] | None = None) -> None:
     eval_parser.add_argument("--temperature", type=float, default=1)
     eval_parser.add_argument("--rerank-weight", type=float, default=0.5)
     eval_parser.add_argument("--compose-config", help="Frozen best_compose.json produced on val")
+    eval_parser.add_argument(
+        "--union-targets", action="store_true", help="Prior-only debug overfit check"
+    )
     sweep_parser = subparsers.add_parser(
         "sweep", help="Choose composition on val; forward experts once"
     )
@@ -194,6 +197,7 @@ def main(argv: list[str] | None = None) -> None:
             temperature=arguments.temperature,
             rerank_weight=arguments.rerank_weight,
             compose_config=arguments.compose_config,
+            union_targets=arguments.union_targets,
         )
     elif arguments.command == "make-tables":
         from g2g.eval.tables import make_tables
