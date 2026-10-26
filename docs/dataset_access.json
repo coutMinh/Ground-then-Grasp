@@ -1,0 +1,36 @@
+{
+  "token_configured": false,
+  "owner_terms_confirmed": false,
+  "datasets": {
+    "airvlab/Grasp-Anything": {
+      "metadata_status": 200,
+      "gated": false,
+      "files": {
+        "image_part_aa": {
+          "http_status": 200
+        },
+        "image_part_ab": {
+          "http_status": 200
+        }
+      },
+      "revision": "6b4917455d0910c23f936a6c7a968418ba518897"
+    },
+    "airvlab/Grasp-Anything-pp": {
+      "metadata_status": 200,
+      "gated": false,
+      "files": {
+        "grasp_instructions.zip": {
+          "http_status": 200
+        },
+        "part_mask.zip": {
+          "http_status": 200
+        },
+        "grasp_label_positive.zip": {
+          "http_status": 200
+        }
+      },
+      "revision": "9b30c841d4f04e4a62e9f7abb3b503337a6200a7"
+    }
+  },
+  "interpretation": "HTTP access is technical availability only. Confirm the owner's download form/license separately before downloading. No archive bodies were downloaded."
+}

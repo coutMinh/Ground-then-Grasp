@@ -1,0 +1,60 @@
+{
+  "repository": "https://github.com/Fsoft-AIC/LGD",
+  "commit": "501904dc5c30c8fad58d90f7e4f49b4095f11eb0",
+  "splits": {
+    "split/grasp-anything++/test/seen.obj": {
+      "sha256": "37e929120751d99d9abb48a5fdb9d4a3033ab5aae67caec30b8cb49086fc10ee",
+      "entries": 573,
+      "unique_images": 420,
+      "id_level": "object",
+      "examples": [
+        "acf8a61d0b014e16902edc0938f7cfa21ab002a671d21b379abf0f42f756a172_0",
+        "acf8a61d0b014e16902edc0938f7cfa21ab002a671d21b379abf0f42f756a172_1",
+        "4359b2e5fb29c30b5d3ea5ec275d26773aa1af24ac5ef418db6878d03c12b51e_0"
+      ]
+    },
+    "split/grasp-anything++/test/unseen.obj": {
+      "sha256": "94d175613ed506cbe6265e58b31f87658ee86f30a232f640167fa90ecab8db92",
+      "entries": 230,
+      "unique_images": 200,
+      "id_level": "object",
+      "examples": [
+        "7440f611f1e2175111137e1c9f072a6548b6172c3697dbacee9bdab6dd96106f_0",
+        "929290193a12463d79c498e4ac392b3ca973dfb50e28953bbf0e6f51d09446f6_0",
+        "b3571dafc5f46d4d6a25f9bc3875ebea25700d092833228799591fcc5f2c1471_0"
+      ]
+    },
+    "split/grasp-anything++/train/seen.obj": {
+      "sha256": "6b6ddee6ad2bc19b8fdfebcc61ab58900fbe384f498dd38d1c4478728e7ac10d",
+      "entries": 14516,
+      "unique_images": 11616,
+      "id_level": "object",
+      "examples": [
+        "3f731b45f25001fecd4ec58cbb1178f5c274b69c62d4f4df2ebed0bb996a570f_0",
+        "3f731b45f25001fecd4ec58cbb1178f5c274b69c62d4f4df2ebed0bb996a570f_1",
+        "83c43efd13b7d0c6c08647445861244f462effcfabc4df8f5fbe2224e01c9c85_0"
+      ]
+    }
+  },
+  "overlap": [
+    {
+      "left": "split/grasp-anything++/test/seen.obj",
+      "right": "split/grasp-anything++/test/unseen.obj",
+      "object_ids": 0,
+      "image_ids": 0
+    },
+    {
+      "left": "split/grasp-anything++/test/seen.obj",
+      "right": "split/grasp-anything++/train/seen.obj",
+      "object_ids": 0,
+      "image_ids": 0
+    },
+    {
+      "left": "split/grasp-anything++/test/unseen.obj",
+      "right": "split/grasp-anything++/train/seen.obj",
+      "object_ids": 0,
+      "image_ids": 37
+    }
+  ],
+  "scope": "Official split metadata, not verified archive row counts."
+}

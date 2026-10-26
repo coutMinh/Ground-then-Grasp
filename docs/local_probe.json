@@ -1,0 +1,31 @@
+{
+  "recorded_at_utc": "2026-10-26T05:21:46.326508+00:00",
+  "python": "3.12.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu_count": 20,
+  "memory_total_bytes": 42619097088,
+  "memory_available_bytes": 22010949632,
+  "packages": {
+    "torch": "2.3.1",
+    "numpy": "1.26.2",
+    "transformers": "4.57.1",
+    "huggingface-hub": "0.36.2",
+    "marimo": "0.25.2"
+  },
+  "torch_cuda_build": null,
+  "cuda_available": false,
+  "cuda_smoke": {
+    "passed": false,
+    "reason": "CUDA unavailable"
+  },
+  "gpu": [],
+  "driver": null,
+  "disk_total_bytes": 734002147328,
+  "disk_free_bytes": 633398865920,
+  "running_as_root": null,
+  "apt_available": false,
+  "hf_token_configured": false,
+  "persistence_across_sessions": "unknown; user must verify",
+  "session_time_limit": "unknown; user must verify",
+  "background_survives_closed_tab": "unknown; user must verify"
+}

@@ -1,0 +1,228 @@
+{
+  "parsed_samples": 20,
+  "rendered_overlays": 10,
+  "visually_reviewed": true,
+  "samples": [
+    {
+      "sample_id": "3f731b45f25001fecd4ec58cbb1178f5c274b69c62d4f4df2ebed0bb996a570f_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 10,
+      "mask_pixels": 11057,
+      "centers_in_mask": 10,
+      "instruction": "Take stapler by its office tool."
+    },
+    {
+      "sample_id": "83c43efd13b7d0c6c08647445861244f462effcfabc4df8f5fbe2224e01c9c85_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 1,
+      "mask_pixels": 8134,
+      "centers_in_mask": 1,
+      "instruction": "Lift ball by its round shape."
+    },
+    {
+      "sample_id": "b005389189d37b491fb32949a4b993f0ab21213abc29de764237429b725b8477_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 22,
+      "mask_pixels": 4257,
+      "centers_in_mask": 13,
+      "instruction": "Hold key at its metal or plastic."
+    },
+    {
+      "sample_id": "1f6930fa0e4354a6caaf2381c70c864da9f1c30a497a6c0f3c8b7c589fb7aed7_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 13,
+      "mask_pixels": 2697,
+      "centers_in_mask": 8,
+      "instruction": "Grip scissors on its cutting blades."
+    },
+    {
+      "sample_id": "112676e5072a49f27e34f76614ab582eea0d61be2feaa6828f25fcb551f4445c_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 1,
+      "mask_pixels": 15458,
+      "centers_in_mask": 1,
+      "instruction": "Lift plant by its leaves."
+    },
+    {
+      "sample_id": "c428cf1204973de8810db8d0333461caa18c69b6c1dd5f6686f73b93b516eb1f_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 3,
+      "mask_pixels": 5152,
+      "centers_in_mask": 2,
+      "instruction": "Lift spoon by its utensil."
+    },
+    {
+      "sample_id": "fc2d622b25de9c612d83e03478868c3937e189cb70f252b77f18a4043251bade_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 6,
+      "mask_pixels": 7356,
+      "centers_in_mask": 5,
+      "instruction": "Hold highlighter at its marker."
+    },
+    {
+      "sample_id": "b34ac0970ba33cdb646ff1389fb16c8cf5fb01b5785b6975446c7624cd1de524_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 11,
+      "mask_pixels": 1664,
+      "centers_in_mask": 5,
+      "instruction": "Grip mug on its handle."
+    },
+    {
+      "sample_id": "87c73540881e570b734493c962400c81e44ee792fdade87aa7ecd38acebc26d8_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 3,
+      "mask_pixels": 10554,
+      "centers_in_mask": 3,
+      "instruction": "Grab lemon on its skin."
+    },
+    {
+      "sample_id": "7d1d3e1d7f58ed19d4632bff7a8e74b18386fcc8648c09c3abb91d73099277d3_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 8,
+      "mask_pixels": 3541,
+      "centers_in_mask": 0,
+      "instruction": "Fetch book by its cover."
+    },
+    {
+      "sample_id": "a4599308bc8f6d73ebd6a02bc483f2eb012a4608591ece2b7b348269b383dcc9_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 6,
+      "mask_pixels": 5952,
+      "centers_in_mask": 6,
+      "instruction": "Grip purse on its material."
+    },
+    {
+      "sample_id": "50a03b1dec08e9da174bd14657237fafabb6d152cb76bf009e5780517b0e6cac_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 10,
+      "mask_pixels": 3056,
+      "centers_in_mask": 6,
+      "instruction": "Hold pen at its barrel."
+    },
+    {
+      "sample_id": "ecbe5a6fb3ad2a08a63964205247d8486a9a93df74b7027874873be7b2d486cd_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 8,
+      "mask_pixels": 9563,
+      "centers_in_mask": 8,
+      "instruction": "Pick up jar by its container."
+    },
+    {
+      "sample_id": "25b93c0141c0b9ce4c60176ba0d28ad7e85a5c1bb078d85503714aed47ac9f98_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 6,
+      "mask_pixels": 15106,
+      "centers_in_mask": 6,
+      "instruction": "Fetch pen by its barrel."
+    },
+    {
+      "sample_id": "e32fd63d8c5884c3271a6b0fd679c0774a4ab31a67b4ee6b5f3c2c1467bfcb18_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 22,
+      "mask_pixels": 4730,
+      "centers_in_mask": 15,
+      "instruction": "Take pencil by its wooden or plastic."
+    },
+    {
+      "sample_id": "c70bd497b7d53df120f07163d0793d3c15cde60a1d9f79de2e31492760a72f0d_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 6,
+      "mask_pixels": 6250,
+      "centers_in_mask": 6,
+      "instruction": "Pick up cup by its rim."
+    },
+    {
+      "sample_id": "bcda7e2103e06696a0866ea0b705e7e582f1ab70c87ab27e68e4f5f5debf8944_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 8,
+      "mask_pixels": 2198,
+      "centers_in_mask": 5,
+      "instruction": "Hold mug at its handle."
+    },
+    {
+      "sample_id": "ef1c7fab06a2ddb61a395491990a869b1b2525760062f4385f6097407553abb2_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 16,
+      "mask_pixels": 3404,
+      "centers_in_mask": 13,
+      "instruction": "Take hold of mug on its handle."
+    },
+    {
+      "sample_id": "fa5bb2505a88d52946a5c58a002e2e4a81353976d47effd453b56c610d8f4f02_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 9,
+      "mask_pixels": 967,
+      "centers_in_mask": 7,
+      "instruction": "Hold mug at its handle."
+    },
+    {
+      "sample_id": "5b2a3fdd4c6038c8e35d8eb8985586bfba2660a4cced55f0f6359156b59ddef4_0_0",
+      "image_size": [
+        416,
+        416
+      ],
+      "grasp_count": 1,
+      "mask_pixels": 12481,
+      "centers_in_mask": 1,
+      "instruction": "Grip wallet on its money holder."
+    }
+  ],
+  "review_notes": "Coordinate mapping checked against LGD. Synthetic dataset includes semantic label noise and imperfect mask/GT agreement; no sample was silently removed."
+}

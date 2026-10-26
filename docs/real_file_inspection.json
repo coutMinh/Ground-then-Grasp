@@ -1,0 +1,1025 @@
+{
+  "scope": "Local file inspection only; no inferred filename mapping.",
+  "files": [
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/3f731b45f25001fecd4ec58cbb1178f5c274b69c62d4f4df2ebed0bb996a570f_0_0.pt",
+      "sha256": "3b8fb3be71e89f65c61d3736fe3839d468ff81f1ed775f04e2b182e1ae7def9b",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          10,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 60,
+        "min": 0.02656015381217003,
+        "max": 207.37562561035156,
+        "preview": "[0.15246693789958954, 147.5579376220703, 114.36456298828125, 150.84942626953125, 32.24823760986328, 35.023460388183594, 0.1412348449230194, 113.52864074707031, 121.4588623046875, 133.19146728515625, 34.10625076293945, 31.956289291381836]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/83c43efd13b7d0c6c08647445861244f462effcfabc4df8f5fbe2224e01c9c85_0_0.pt",
+      "sha256": "ceae5ce272a82eec6f0b048671ba2fcefc315cccc1c72b6a660b5187cc0905e2",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          1,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 6,
+        "min": 0.31147363781929016,
+        "max": 296.5299987792969,
+        "preview": "[0.31147363781929016, 240.10694885253906, 296.5299987792969, 133.47955322265625, 28.88045310974121, 36.383365631103516]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/b005389189d37b491fb32949a4b993f0ab21213abc29de764237429b725b8477_0_0.pt",
+      "sha256": "35dbbec390527b8893a7ccfc1b5740a8c1e54f852278cc6054e8d2437e283ba6",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          22,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 132,
+        "min": 0.007816601544618607,
+        "max": 291.0874938964844,
+        "preview": "[0.13067060708999634, 220.0750732421875, 178.1258087158203, 141.8768310546875, 34.04391098022461, 5.514132499694824, 0.1129608303308487, 219.5148468017578, 175.2406005859375, 154.34255981445312, 37.11882400512695, 178.99740600585938]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/1f6930fa0e4354a6caaf2381c70c864da9f1c30a497a6c0f3c8b7c589fb7aed7_0_0.pt",
+      "sha256": "944e5def0ca2546fd1e1e02085088613800c3df006160de6960abc72d2bedd20",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          13,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 78,
+        "min": 0.027312936261296272,
+        "max": 330.86090087890625,
+        "preview": "[0.25719156861305237, 316.8956298828125, 215.28067016601562, 123.1595458984375, 31.456388473510742, 12.221699714660645, 0.08903509378433228, 308.7210693359375, 243.53933715820312, 138.27610778808594, 37.408382415771484, 10.092107772827148]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/112676e5072a49f27e34f76614ab582eea0d61be2feaa6828f25fcb551f4445c_0_0.pt",
+      "sha256": "b5ed4b07c982866ae21d9c9e2ee28df3f05e36636cc7bb7ae5b2053a4dbd9d04",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          1,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 6,
+        "min": 0.021052205935120583,
+        "max": 247.03179931640625,
+        "preview": "[0.021052205935120583, 247.03179931640625, 212.15936279296875, 168.3377685546875, 37.452877044677734, 19.887271881103516]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/c428cf1204973de8810db8d0333461caa18c69b6c1dd5f6686f73b93b516eb1f_0_0.pt",
+      "sha256": "10baaf45ba9f52f0c47e7bef9ba04962b12e2d01969b7a7b8ac1e73b10211e1b",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          3,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 18,
+        "min": 0.020807936787605286,
+        "max": 362.99908447265625,
+        "preview": "[0.03501558303833008, 215.556884765625, 339.7532043457031, 160.9104461669922, 39.67890930175781, 169.12567138671875, 0.026712847873568535, 244.3453369140625, 343.6661376953125, 144.302734375, 44.74937057495117, 169.05868530273438]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/fc2d622b25de9c612d83e03478868c3937e189cb70f252b77f18a4043251bade_0_0.pt",
+      "sha256": "62ec903e3c62e3670df65e0d077741576d4172d6f16f28736fe195c9b6ec7e57",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          6,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 36,
+        "min": 0.015441236086189747,
+        "max": 271.9314880371094,
+        "preview": "[0.051249753683805466, 47.09583282470703, 200.93887329101562, 140.60531616210938, 38.31319808959961, 176.277099609375, 0.0427824929356575, 40.04130554199219, 178.3606719970703, 125.8947525024414, 36.75471496582031, 12.31078815460205]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/b34ac0970ba33cdb646ff1389fb16c8cf5fb01b5785b6975446c7624cd1de524_0_0.pt",
+      "sha256": "716f84dfecdc3d60d5930064651cfabdd176e5a7de9c4c3a8309a5ae6af5260e",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          11,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 66,
+        "min": 0.032244741916656494,
+        "max": 303.17803955078125,
+        "preview": "[0.36222043633461, 298.3499450683594, 214.6554718017578, 150.6044921875, 54.736629486083984, 179.07945251464844, 0.3282417058944702, 284.5605163574219, 213.81884765625, 127.74698638916016, 33.58876419067383, 7.38297176361084]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/87c73540881e570b734493c962400c81e44ee792fdade87aa7ecd38acebc26d8_0_0.pt",
+      "sha256": "30a0f503f98b85bf12042a454de9fe4e25ac4f14c2a5c906bd364f7dc7ab8c8c",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          3,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 18,
+        "min": 0.04383745416998863,
+        "max": 210.65731811523438,
+        "preview": "[0.8029159903526306, 143.90557861328125, 179.2407989501953, 158.66241455078125, 32.937286376953125, 28.079404830932617, 0.0871397852897644, 170.32986450195312, 172.461181640625, 166.2248077392578, 33.32373046875, 29.35639762878418]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/7d1d3e1d7f58ed19d4632bff7a8e74b18386fcc8648c09c3abb91d73099277d3_0_0.pt",
+      "sha256": "0de5910834c47a44d2076137b8e7c93e7d5db3327ddeca3761150b3b5df7d655",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          8,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 48,
+        "min": 0.023405948653817177,
+        "max": 381.44744873046875,
+        "preview": "[0.2695956528186798, 142.98304748535156, 380.56488037109375, 106.41261291503906, 29.944557189941406, 93.35723114013672, 0.11792551726102829, 167.18722534179688, 381.44744873046875, 96.87310791015625, 29.183778762817383, 93.07841491699219]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/a4599308bc8f6d73ebd6a02bc483f2eb012a4608591ece2b7b348269b383dcc9_0_0.pt",
+      "sha256": "ce7f653526d46919b51fabc9c0788ea652a62ec1683855b5b05e0427fcd7d60d",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          6,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 36,
+        "min": 0.1550557017326355,
+        "max": 391.5592041015625,
+        "preview": "[0.35467565059661865, 381.09222412109375, 248.12319946289062, 116.13906860351562, 25.18352699279785, 26.166187286376953, 0.3334059715270996, 388.8291015625, 263.7725524902344, 107.97339630126953, 30.936735153198242, 25.691030502319336]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/50a03b1dec08e9da174bd14657237fafabb6d152cb76bf009e5780517b0e6cac_0_0.pt",
+      "sha256": "186103657ffd5e8ed63196c6f6e6268d4f81753f3f4ec5d93368617650b6ddc6",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          10,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 60,
+        "min": 0.01792042702436447,
+        "max": 290.8879089355469,
+        "preview": "[0.1414804905653, 150.99794006347656, 116.97903442382812, 211.07122802734375, 43.39140319824219, 173.1209259033203, 0.05546824261546135, 178.9105682373047, 115.24560546875, 200.15896606445312, 43.242855072021484, 15.132933616638184]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/ecbe5a6fb3ad2a08a63964205247d8486a9a93df74b7027874873be7b2d486cd_0_0.pt",
+      "sha256": "439d6a649c5ceb76183e517f4eaaa0e0133789e5ac358eea680bc69d84b5cd79",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          8,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 48,
+        "min": 0.027884339913725853,
+        "max": 307.714111328125,
+        "preview": "[2.429572105407715, 88.500244140625, 248.23146057128906, 111.35601806640625, 25.516611099243164, 33.56404113769531, 0.19179683923721313, 108.7679672241211, 240.1138458251953, 105.18140411376953, 46.16262435913086, 172.1317596435547]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/25b93c0141c0b9ce4c60176ba0d28ad7e85a5c1bb078d85503714aed47ac9f98_0_0.pt",
+      "sha256": "a6d16e2d4482ff11b2ecded4b85cb0b410323abbb0629f7752ec849fc4b2def0",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          6,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 36,
+        "min": 0.013869578018784523,
+        "max": 169.48480224609375,
+        "preview": "[0.020312651991844177, 88.27503967285156, 83.85090637207031, 118.843505859375, 29.639333724975586, 19.71131706237793, 0.017006607726216316, 97.13298034667969, 68.07777404785156, 165.70558166503906, 45.19682693481445, 13.530545234680176]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/e32fd63d8c5884c3271a6b0fd679c0774a4ab31a67b4ee6b5f3c2c1467bfcb18_0_0.pt",
+      "sha256": "f72536d71f94afbb13fdfad52523a4ff10e1cadbd6f9302fbd540e9b4b114737",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          22,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 132,
+        "min": 0.007404205854982138,
+        "max": 356.3484191894531,
+        "preview": "[0.23657378554344177, 75.0079574584961, 208.1372833251953, 102.89978790283203, 31.74135398864746, 179.99937438964844, 0.20251275599002838, 76.94348907470703, 209.9022979736328, 105.17339324951172, 27.1025390625, 7.528748035430908]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/c70bd497b7d53df120f07163d0793d3c15cde60a1d9f79de2e31492760a72f0d_0_0.pt",
+      "sha256": "b4859cded443a06714b4558f2c7d52c981d43f8c45cbafdb9d1f3bb5488fd067",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          6,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 36,
+        "min": 0.07010240852832794,
+        "max": 273.6159973144531,
+        "preview": "[1.0215487480163574, 261.26129150390625, 267.8228759765625, 153.85353088378906, 30.52589988708496, 22.619436264038086, 0.2450765073299408, 245.5056610107422, 273.6159973144531, 127.904541015625, 27.126562118530273, 34.06643295288086]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/bcda7e2103e06696a0866ea0b705e7e582f1ab70c87ab27e68e4f5f5debf8944_0_0.pt",
+      "sha256": "e8eb05b20849e8d0474573f2291f4e3e056723f79fa7ea5ec9cb2e5b60c8d0c1",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          8,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 48,
+        "min": 0.0458073653280735,
+        "max": 384.8102722167969,
+        "preview": "[0.11487399786710739, 41.16272735595703, 326.5807800292969, 126.61272430419922, 69.88944244384766, 178.9166717529297, 0.09554184228181839, 37.532806396484375, 324.5263671875, 144.228515625, 37.340572357177734, 8.390856742858887]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/ef1c7fab06a2ddb61a395491990a869b1b2525760062f4385f6097407553abb2_0_0.pt",
+      "sha256": "a673d4a6b987eba782077470dbbb2948e3516f0b12ca695c8929f8524f353177",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          16,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 96,
+        "min": 0.009634191170334816,
+        "max": 361.4207458496094,
+        "preview": "[0.028537549078464508, 321.3585205078125, 195.8162078857422, 158.28662109375, 36.606666564941406, 14.765775680541992, 0.026476697996258736, 317.7126159667969, 200.8642578125, 137.73960876464844, 25.751953125, 27.010692596435547]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/fa5bb2505a88d52946a5c58a002e2e4a81353976d47effd453b56c610d8f4f02_0_0.pt",
+      "sha256": "99898fbb8eb3affd6fce7d1adcff265b023ae62587c908cbdf24d5f088f48007",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          9,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 54,
+        "min": 0.0712604969739914,
+        "max": 227.4814910888672,
+        "preview": "[2.47524356842041, 94.49042510986328, 201.84002685546875, 127.79421997070312, 34.47456741333008, 174.64231872558594, 1.166333794593811, 111.7935791015625, 202.81002807617188, 133.76849365234375, 39.21772003173828, 175.10003662109375]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_label_positive/5b2a3fdd4c6038c8e35d8eb8985586bfba2660a4cced55f0f6359156b59ddef4_0_0.pt",
+      "sha256": "640ecc0ba3a56a354cd9fc903011fa49425fe5263bd1f80040c1da30fac7c3eb",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          1,
+          6
+        ],
+        "dtype": "float32",
+        "finite_count": 6,
+        "min": 0.040776073932647705,
+        "max": 268.2151794433594,
+        "preview": "[0.040776073932647705, 268.2151794433594, 235.75672912597656, 170.25894165039062, 33.06092834472656, 28.321603775024414]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/3f731b45f25001fecd4ec58cbb1178f5c274b69c62d4f4df2ebed0bb996a570f_0_0.pkl",
+      "sha256": "f09bf078a10ee2004e21bd53e9cb02ec0cc03e2f3303e5666f39dd213dfb690c",
+      "content": {
+        "type": "str",
+        "preview": "'Take stapler by its office tool.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/83c43efd13b7d0c6c08647445861244f462effcfabc4df8f5fbe2224e01c9c85_0_0.pkl",
+      "sha256": "4d9d97eefa5dcb989daa24f46ddc7392759325dc002dcdce01b9fb5f2477b3b8",
+      "content": {
+        "type": "str",
+        "preview": "'Lift ball by its round shape.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/b005389189d37b491fb32949a4b993f0ab21213abc29de764237429b725b8477_0_0.pkl",
+      "sha256": "9667999d8f594a656667294eef5ff672809c606b6c75eedf3e56d4dfb5696622",
+      "content": {
+        "type": "str",
+        "preview": "'Hold key at its metal or plastic.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/1f6930fa0e4354a6caaf2381c70c864da9f1c30a497a6c0f3c8b7c589fb7aed7_0_0.pkl",
+      "sha256": "bbfdfd7ddb6d9bb4418aad8c20d276c9e2772015097b9402fa240be0b283ade4",
+      "content": {
+        "type": "str",
+        "preview": "'Grip scissors on its cutting blades.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/112676e5072a49f27e34f76614ab582eea0d61be2feaa6828f25fcb551f4445c_0_0.pkl",
+      "sha256": "308b48d1aec94ce03c8ad89d9777a8973c15ecb52957dedcb7e2064233ea0638",
+      "content": {
+        "type": "str",
+        "preview": "'Lift plant by its leaves.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/c428cf1204973de8810db8d0333461caa18c69b6c1dd5f6686f73b93b516eb1f_0_0.pkl",
+      "sha256": "f42056d21b290698751d2249e4dba7d5a05dcf15979da37d8b7973e7cd78ce70",
+      "content": {
+        "type": "str",
+        "preview": "'Lift spoon by its utensil.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/fc2d622b25de9c612d83e03478868c3937e189cb70f252b77f18a4043251bade_0_0.pkl",
+      "sha256": "c2fff5225a737230b7efe1b980e331650ef1c2c0a67890615a2fdf6a6a068ddb",
+      "content": {
+        "type": "str",
+        "preview": "'Hold highlighter at its marker.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/b34ac0970ba33cdb646ff1389fb16c8cf5fb01b5785b6975446c7624cd1de524_0_0.pkl",
+      "sha256": "8a26fca86c9c2778e932d20149cbf36d9b86fb15ba9a75dfaad96633fbf27e59",
+      "content": {
+        "type": "str",
+        "preview": "'Grip mug on its handle.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/87c73540881e570b734493c962400c81e44ee792fdade87aa7ecd38acebc26d8_0_0.pkl",
+      "sha256": "25fd2184bd9563e858fd542cbc3e0996f855a7b96c02c069d981004b37edda32",
+      "content": {
+        "type": "str",
+        "preview": "'Grab lemon on its skin.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/7d1d3e1d7f58ed19d4632bff7a8e74b18386fcc8648c09c3abb91d73099277d3_0_0.pkl",
+      "sha256": "08fc2dacd958af9b8b8260953e5be2720af3d11b49299121d1e0ad5a760bceae",
+      "content": {
+        "type": "str",
+        "preview": "'Fetch book by its cover.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/a4599308bc8f6d73ebd6a02bc483f2eb012a4608591ece2b7b348269b383dcc9_0_0.pkl",
+      "sha256": "a55a350fd2840003f356501de817d71614a527d179a9ecdf0ae30a59fa383acc",
+      "content": {
+        "type": "str",
+        "preview": "'Grip purse on its material.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/50a03b1dec08e9da174bd14657237fafabb6d152cb76bf009e5780517b0e6cac_0_0.pkl",
+      "sha256": "a23fe7ad960843ca717c12f3ef6e9fd63b890c9136f63058e4e56b0bb4b2d687",
+      "content": {
+        "type": "str",
+        "preview": "'Hold pen at its barrel.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/ecbe5a6fb3ad2a08a63964205247d8486a9a93df74b7027874873be7b2d486cd_0_0.pkl",
+      "sha256": "85293b854a3dfa9355efd5583eaeba5c42e7845f6e7c6439046c973752e9660b",
+      "content": {
+        "type": "str",
+        "preview": "'Pick up jar by its container.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/25b93c0141c0b9ce4c60176ba0d28ad7e85a5c1bb078d85503714aed47ac9f98_0_0.pkl",
+      "sha256": "1908df26e82debc75a08e6151426a1a2e0aaec149ff1998931d881df8090a18e",
+      "content": {
+        "type": "str",
+        "preview": "'Fetch pen by its barrel.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/e32fd63d8c5884c3271a6b0fd679c0774a4ab31a67b4ee6b5f3c2c1467bfcb18_0_0.pkl",
+      "sha256": "542681db66c2148f0851c6a829f753ed7234c9768738f157d3b73b50a0f419d7",
+      "content": {
+        "type": "str",
+        "preview": "'Take pencil by its wooden or plastic.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/c70bd497b7d53df120f07163d0793d3c15cde60a1d9f79de2e31492760a72f0d_0_0.pkl",
+      "sha256": "56dea4be98f03cc2eb1075700c596d536786fe2a8189bca6a3cedc9e3e3a21f8",
+      "content": {
+        "type": "str",
+        "preview": "'Pick up cup by its rim.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/bcda7e2103e06696a0866ea0b705e7e582f1ab70c87ab27e68e4f5f5debf8944_0_0.pkl",
+      "sha256": "8d0ad1cb51875c4f2822bdcb7a1c561132eaa3247157e51060c7e06a1256d3b4",
+      "content": {
+        "type": "str",
+        "preview": "'Hold mug at its handle.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/ef1c7fab06a2ddb61a395491990a869b1b2525760062f4385f6097407553abb2_0_0.pkl",
+      "sha256": "9279e6c685766eb2280e78e41805e3a07ded0ff305d18251525e376777ccba2e",
+      "content": {
+        "type": "str",
+        "preview": "'Take hold of mug on its handle.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/fa5bb2505a88d52946a5c58a002e2e4a81353976d47effd453b56c610d8f4f02_0_0.pkl",
+      "sha256": "8d0ad1cb51875c4f2822bdcb7a1c561132eaa3247157e51060c7e06a1256d3b4",
+      "content": {
+        "type": "str",
+        "preview": "'Hold mug at its handle.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/grasp_instructions/5b2a3fdd4c6038c8e35d8eb8985586bfba2660a4cced55f0f6359156b59ddef4_0_0.pkl",
+      "sha256": "4191e84a84659e032c6d285e1d235293c606005d5e7c1f562caccf4b7d4c9a36",
+      "content": {
+        "type": "str",
+        "preview": "'Grip wallet on its money holder.'"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/3f731b45f25001fecd4ec58cbb1178f5c274b69c62d4f4df2ebed0bb996a570f_0_0.npy",
+      "sha256": "06b9bba47141204e1d5207cb960bab206367299331be2ecadc9708343f8b7f36",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/83c43efd13b7d0c6c08647445861244f462effcfabc4df8f5fbe2224e01c9c85_0_0.npy",
+      "sha256": "53d80ffe5386334e85bd5c4f5026f31064dacc1663b617ccc2e7244a0e03f1b8",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/b005389189d37b491fb32949a4b993f0ab21213abc29de764237429b725b8477_0_0.npy",
+      "sha256": "2d38f0c309a0316ea44d082ed1ddedcd60db7e412877ffefea99f07a1ff274a1",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/1f6930fa0e4354a6caaf2381c70c864da9f1c30a497a6c0f3c8b7c589fb7aed7_0_0.npy",
+      "sha256": "99e608067b71f6c0f75fa7483b8d68b16b6ec111925b0c97f88e6add84059df7",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/112676e5072a49f27e34f76614ab582eea0d61be2feaa6828f25fcb551f4445c_0_0.npy",
+      "sha256": "180abe3f8357e1d5a5199b5fa0b6d74c354787d75eca73301ed039952dc55a04",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/c428cf1204973de8810db8d0333461caa18c69b6c1dd5f6686f73b93b516eb1f_0_0.npy",
+      "sha256": "867cfae26942e55b8dfc31e5dfcd17883e29dd36971e46e9cd3e97fb784e5ab3",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/fc2d622b25de9c612d83e03478868c3937e189cb70f252b77f18a4043251bade_0_0.npy",
+      "sha256": "c1f724acc9b4763e0472baca8b0465ca7f833f4209f86522334e37438dd3624d",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/b34ac0970ba33cdb646ff1389fb16c8cf5fb01b5785b6975446c7624cd1de524_0_0.npy",
+      "sha256": "14185be61cff3efbb506d0b796ef3b7003132863e326c454d3015c73186b802f",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/87c73540881e570b734493c962400c81e44ee792fdade87aa7ecd38acebc26d8_0_0.npy",
+      "sha256": "f7f896962426a06b636f191279d9582073d397f30aa2c6c1a70c70de679ca1e5",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/7d1d3e1d7f58ed19d4632bff7a8e74b18386fcc8648c09c3abb91d73099277d3_0_0.npy",
+      "sha256": "6217ea00f4fd559cc99aa723ffa91e24a8b070ee80bea4d52558a8aebd78971c",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/a4599308bc8f6d73ebd6a02bc483f2eb012a4608591ece2b7b348269b383dcc9_0_0.npy",
+      "sha256": "9b989af412758ce1bfc912c420f211e403437f867a485f1a11a4b7b8558dbb90",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/50a03b1dec08e9da174bd14657237fafabb6d152cb76bf009e5780517b0e6cac_0_0.npy",
+      "sha256": "46edb90a1ae16b96474ecfb5c7b9380d8d4f7f997be5c94f0dae52c80ee8726c",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/ecbe5a6fb3ad2a08a63964205247d8486a9a93df74b7027874873be7b2d486cd_0_0.npy",
+      "sha256": "db17743b62432fd64142caf1c912e0e5d9ccac457b06c8f89dffefe1dce6e951",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/25b93c0141c0b9ce4c60176ba0d28ad7e85a5c1bb078d85503714aed47ac9f98_0_0.npy",
+      "sha256": "18bda601eb80cf79c1d172066b8c52ac44817d32cca854e8173e9e7b9005480b",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/e32fd63d8c5884c3271a6b0fd679c0774a4ab31a67b4ee6b5f3c2c1467bfcb18_0_0.npy",
+      "sha256": "88979795fae36ee850b5627f9c8520255b01dd667257b5ef10c13b4edf4556a4",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/c70bd497b7d53df120f07163d0793d3c15cde60a1d9f79de2e31492760a72f0d_0_0.npy",
+      "sha256": "6bf633e66152baf9e2a826b4ece526367db9d10820e038fa93b5efaaa35aff3d",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/bcda7e2103e06696a0866ea0b705e7e582f1ab70c87ab27e68e4f5f5debf8944_0_0.npy",
+      "sha256": "8110f7cb8615b98c21ecaa2ea1f8c2b51a72caca6a766ea20278b3c5fb5c5927",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/ef1c7fab06a2ddb61a395491990a869b1b2525760062f4385f6097407553abb2_0_0.npy",
+      "sha256": "affc8a0f97042df98287a4394f6f95e87c9a837a948266e436af44aaf50140d9",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/fa5bb2505a88d52946a5c58a002e2e4a81353976d47effd453b56c610d8f4f02_0_0.npy",
+      "sha256": "a29e36063538582541bdb00a9d4011e8c14f2a9a48a8586362a160bab0a97150",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/part_mask/5b2a3fdd4c6038c8e35d8eb8985586bfba2660a4cced55f0f6359156b59ddef4_0_0.npy",
+      "sha256": "39cb818e3d00d97602a71cb1246c77216abd16ac1d947fec6245cc5fe5b0a5d9",
+      "content": {
+        "type": "ndarray",
+        "shape": [
+          416,
+          416
+        ],
+        "dtype": "uint8",
+        "finite_count": 173056,
+        "min": 0.0,
+        "max": 1.0,
+        "preview": "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/3f731b45f25001fecd4ec58cbb1178f5c274b69c62d4f4df2ebed0bb996a570f.jpg",
+      "sha256": "908a52003562c543e067bfcdfe7178707019cb0fb19a26e873a80b7f7e6b9dda",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/83c43efd13b7d0c6c08647445861244f462effcfabc4df8f5fbe2224e01c9c85.jpg",
+      "sha256": "9f7636948cb6f66ad6f6c1a9508b8990281e674c13dbf977be1de56b6fbfb412",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/b005389189d37b491fb32949a4b993f0ab21213abc29de764237429b725b8477.jpg",
+      "sha256": "768d89755b760f866716cb3be447e18d4e2b875a476aa5a3cea5d8a74643ff26",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/1f6930fa0e4354a6caaf2381c70c864da9f1c30a497a6c0f3c8b7c589fb7aed7.jpg",
+      "sha256": "d026a1830743cb0bd7da73a8715e816bcb360117b7522e0401559b3154557b4b",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/112676e5072a49f27e34f76614ab582eea0d61be2feaa6828f25fcb551f4445c.jpg",
+      "sha256": "a34d1c1ed0206a221e3394ae00abd4d0fe82f2678888813909281beed6dbb577",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/c428cf1204973de8810db8d0333461caa18c69b6c1dd5f6686f73b93b516eb1f.jpg",
+      "sha256": "79b3bb9c4c4fe772d3b54603546965a97200e40310f9acb1f9e64a0c24945cd4",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/fc2d622b25de9c612d83e03478868c3937e189cb70f252b77f18a4043251bade.jpg",
+      "sha256": "d4a7313aaa0d2a8c01653098438c35249b3cc653432ce7038b05033865e5bb50",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/b34ac0970ba33cdb646ff1389fb16c8cf5fb01b5785b6975446c7624cd1de524.jpg",
+      "sha256": "7c9dd616277358e6d6d9998ed976f1bfae8b82c719077338c680b1ba1a3b6c58",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/87c73540881e570b734493c962400c81e44ee792fdade87aa7ecd38acebc26d8.jpg",
+      "sha256": "067cc78759d96cbb9fc202cb9006ddee290bcefcc94fcc8beccf765bd3834e5d",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/7d1d3e1d7f58ed19d4632bff7a8e74b18386fcc8648c09c3abb91d73099277d3.jpg",
+      "sha256": "5a20087f154250cb4230c37520e408e50ac1e62711ed18b9092d0e142cea5e95",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/a4599308bc8f6d73ebd6a02bc483f2eb012a4608591ece2b7b348269b383dcc9.jpg",
+      "sha256": "fa012d6d3a7f6852ebb00048e02ad5e8d8143c43ad13608fa60c42de9b3fc2ac",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/50a03b1dec08e9da174bd14657237fafabb6d152cb76bf009e5780517b0e6cac.jpg",
+      "sha256": "f3fd00e6f480e879238caf7462bc083e15423ec359db95888bf6f41d037c544a",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/ecbe5a6fb3ad2a08a63964205247d8486a9a93df74b7027874873be7b2d486cd.jpg",
+      "sha256": "3708089451c8becf41399a4093a2d3356ae62cffedb8ab9d70f3366637eab4a2",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/25b93c0141c0b9ce4c60176ba0d28ad7e85a5c1bb078d85503714aed47ac9f98.jpg",
+      "sha256": "6c394c4f568aa5617b530b7db085bdfa14429f7657af1d7d8d9eb5bc69add960",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/e32fd63d8c5884c3271a6b0fd679c0774a4ab31a67b4ee6b5f3c2c1467bfcb18.jpg",
+      "sha256": "258961430571b75d643a33960933c0740ec6dc4631f32b35bcb1e552bade21c3",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/c70bd497b7d53df120f07163d0793d3c15cde60a1d9f79de2e31492760a72f0d.jpg",
+      "sha256": "5f93c067c0bd0f23801002275c5f8f5d39ace86f0b8ebf9a28581002d45408b0",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/bcda7e2103e06696a0866ea0b705e7e582f1ab70c87ab27e68e4f5f5debf8944.jpg",
+      "sha256": "699d461e460f9521ca7a4a5bea597f04eb855a5707cc70907044b4482e4104de",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/ef1c7fab06a2ddb61a395491990a869b1b2525760062f4385f6097407553abb2.jpg",
+      "sha256": "f44d6395dfa56906c962da35e97540ec122a676cc0a3db3b3a8227e7eae83d68",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/fa5bb2505a88d52946a5c58a002e2e4a81353976d47effd453b56c610d8f4f02.jpg",
+      "sha256": "240d4b920106b1fff3052d6b9fb52314a61ea822e9f8317faa5694e3dcedbf2a",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    },
+    {
+      "path": "D:/Entry_test_FPT/Homework/AnhNguyen/artifacts/verify_samples/image/5b2a3fdd4c6038c8e35d8eb8985586bfba2660a4cced55f0f6359156b59ddef4.jpg",
+      "sha256": "5bde485dfc4251d0d78467e96c98342408405dba443a3635d281183ddc492294",
+      "content": {
+        "size": [
+          416,
+          416
+        ],
+        "mode": "RGB"
+      }
+    }
+  ]
+}
