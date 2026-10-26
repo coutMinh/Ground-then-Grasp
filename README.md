@@ -115,6 +115,11 @@ Keep sibling `best.pt` to preserve best-model selection. Config and train/val
 manifest hashes must match. Resume is at epoch boundaries; no mid-epoch promise.
 Use a new run ID; existing run directories are never overwritten.
 
+`configs/prior_overfit.yaml` provides a longer small-data memorization diagnostic.
+Evaluate its `last.pt` against the train manifest with `--system prior --union-targets
+--purpose debug` to measure scene-union training success. This diagnostic samples
+each image once and omits instruction pointing; it cannot be labeled a benchmark.
+
 ## Evaluation and comparison protocol
 
 ```bash

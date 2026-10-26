@@ -1,5 +1,6 @@
 import csv
 import random
+from concurrent.futures import ThreadPoolExecutor
 
 import numpy as np
 import pytest
@@ -30,3 +31,16 @@ def test_registry_duplicate_does_not_leave_stale_lock(tmp_path):
     append_registry(tmp_path, record)
     with (tmp_path / "registry.csv").open(newline="") as stream:
         assert len(list(csv.DictReader(stream))) == 2
+
+
+def test_concurrent_registry_writers_preserve_all_rows(tmp_path):
+    def append(index):
+        record = dict.fromkeys(FIELDS, "synthetic-test-fixture")
+        record["run_id"] = f"worker-{index}"
+        append_registry(tmp_path, record)
+
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        list(pool.map(append, range(8)))
+    with (tmp_path / "registry.csv").open() as stream:
+        records = list(csv.DictReader(stream))
+    assert {record["run_id"] for record in records} == {f"worker-{index}" for index in range(8)}

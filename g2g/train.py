@@ -20,7 +20,7 @@ from g2g.eval.grasp_rect import match_grasp
 from g2g.losses import grounder_loss, prior_loss
 from g2g.models.grconvnet3 import GraspPrior
 from g2g.models.grounder import PartGrounder, parameter_counts
-from g2g.utils.io import read_config, sha256_file, write_json
+from g2g.utils.io import atomic_replace, read_config, sha256_file, write_json
 from g2g.utils.registry import append_registry, git_provenance, hardware_name, run_directory
 from g2g.utils.seed import capture_rng, restore_rng, seed_everything
 
@@ -258,9 +258,11 @@ def train(
                 }
                 temporary = directory / "checkpoint.tmp"
                 torch.save(state, temporary)
-                temporary.replace(directory / "last.pt")
+                atomic_replace(temporary, directory / "last.pt")
                 if improved:
-                    shutil.copyfile(directory / "last.pt", directory / "best.pt")
+                    best_temporary = directory / "best.tmp"
+                    shutil.copyfile(directory / "last.pt", best_temporary)
+                    atomic_replace(best_temporary, directory / "best.pt")
         metrics.update(
             status="completed" if end_epoch == config["epochs"] else "interrupted",
             epochs_completed=end_epoch,

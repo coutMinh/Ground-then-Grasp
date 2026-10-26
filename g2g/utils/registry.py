@@ -6,6 +6,7 @@ import csv
 import platform
 import re
 import subprocess
+import time
 from pathlib import Path
 
 FIELDS = [
@@ -60,8 +61,16 @@ def append_registry(root: str | Path, record: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     # Prevent two writers from corrupting an experiment registry.
     lock = path.with_suffix(".lock")
-    with lock.open("x"):
-        pass
+    deadline = time.monotonic() + 5
+    while True:
+        try:
+            with lock.open("x"):
+                pass
+            break
+        except FileExistsError:
+            if time.monotonic() >= deadline:
+                raise TimeoutError("Registry writer lock did not clear within 5 seconds.") from None
+            time.sleep(0.02)
     try:
         if path.exists():
             with path.open(newline="", encoding="utf-8") as stream:
