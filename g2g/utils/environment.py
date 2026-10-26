@@ -23,7 +23,19 @@ def probe(output: str | Path) -> dict:
     output.parent.mkdir(parents=True, exist_ok=True)
     disk = shutil.disk_usage(output.parent)
     packages = {}
-    for name in ("torch", "numpy", "transformers", "huggingface-hub", "marimo"):
+    for name in (
+        "torch",
+        "torchvision",
+        "torchaudio",
+        "numpy",
+        "transformers",
+        "huggingface-hub",
+        "tokenizers",
+        "safetensors",
+        "librosa",
+        "soxr",
+        "marimo",
+    ):
         try:
             packages[name] = importlib.metadata.version(name)
         except importlib.metadata.PackageNotFoundError:
