@@ -3,6 +3,7 @@
 import ast
 import json
 import pickle
+import runpy
 import subprocess
 from dataclasses import asdict
 from pathlib import Path
@@ -16,6 +17,15 @@ from g2g.data.manifest import write_manifest
 from g2g.data.schema import SampleKey
 from g2g.eval.grasp_rect import GraspRectangle, match_grasp
 from g2g.viz.predictions import select_samples, visualize_predictions
+
+
+@pytest.fixture
+def gallery_sources():
+    # A standalone Git checkout does not include the user's external notebooks.
+    # Exercise the canonical generator in this repo without calling its file writer.
+    builder = Path(__file__).resolve().parents[1] / "scripts/build_prediction_cell.py"
+    namespace = runpy.run_path(str(builder))
+    return namespace["TEMPLATE"], namespace["render_gallery_cells"]()
 
 
 @pytest.fixture
@@ -103,13 +113,14 @@ def test_sample_selection_is_reproducible_and_includes_failures():
     assert len(select_samples(records, 20, "mixed", 42)) == 12
 
 
-def test_pasteable_cell_and_notebook_call_repository_cli(saved_evaluation, tmp_path):
+def test_pasteable_cell_and_notebook_call_repository_cli(
+    saved_evaluation, tmp_path, gallery_sources
+):
     import marimo as mo
 
     run_dir, data_root = saved_evaluation
     repo = Path(__file__).resolve().parents[1]
-    cell_path = repo.parent / "molab-notebooks/view_predictions_cell.py"
-    source = cell_path.read_text(encoding="utf-8")
+    source, notebook_source = gallery_sources
     assert "_renderer_source" not in source
     assert "ImageDraw" not in source
     commands = []
@@ -128,15 +139,13 @@ def test_pasteable_cell_and_notebook_call_repository_cli(saved_evaluation, tmp_p
         unique_id=lambda prefix: "gallery",
         run=run,
     )
-    exec(compile(source, str(cell_path), "exec"), {"runtime": runtime, "mo": mo})
+    exec(compile(source, "gallery-cell", "exec"), {"runtime": runtime, "mo": mo})
     report = json.loads((runtime.artifacts / "qualitative/gallery/selection.json").read_text())
     assert report["count"] == 2 and Path(report["contact_sheet"]).is_file()
     assert commands[0][1:4] == ["-m", "g2g", "visualize-predictions"]
     assert not (runtime.artifacts / "qualitative/_render_predictions.py").exists()
     # The generated app cell uses exactly the same CLI orchestration.
-    notebook = ast.parse(
-        (repo.parent / "molab-notebooks/g2g_pipeline.py").read_text(encoding="utf-8")
-    )
+    notebook = ast.parse(notebook_source)
     gallery_cell = next(
         node
         for node in notebook.body
@@ -167,7 +176,7 @@ def test_pasteable_cell_and_notebook_call_repository_cli(saved_evaluation, tmp_p
 
 
 @pytest.fixture
-def checkout_update(saved_evaluation, tmp_path):
+def checkout_update(saved_evaluation, tmp_path, gallery_sources):
     def git(*args):
         return subprocess.check_output(
             ["git", *(str(arg) for arg in args)], stderr=subprocess.STDOUT, text=True
@@ -194,7 +203,7 @@ def checkout_update(saved_evaluation, tmp_path):
     new_commit = git("-C", seed, "rev-parse", "HEAD")
     run_dir, data_root = saved_evaluation
     repo = Path(__file__).resolve().parents[1]
-    source = (repo.parent / "molab-notebooks/view_predictions_cell.py").read_text(encoding="utf-8")
+    source = gallery_sources[0]
     source = source.replace("_update_checkout = False", "_update_checkout = True", 1)
     commands = []
 

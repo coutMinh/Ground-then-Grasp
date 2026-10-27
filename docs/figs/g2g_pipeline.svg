@@ -1,0 +1,355 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1730" height="1100" viewBox="0 0 1730 1100" font-family="Helvetica, Arial, sans-serif">
+<style>
+  .h{font-weight:700;font-size:16px;fill:#1d2433}
+  .s{font-size:12.5px;fill:#2a2f3a}
+  .g{font-size:11px;fill:#6a7080}
+  .m{font-family:"Times New Roman",Cambria,serif;font-style:italic}
+  .c{text-anchor:middle}
+  .red{fill:#c92a2a}
+  .w{fill:#fff;font-weight:700;font-size:14px}
+  .ar{stroke:#222;stroke-width:1.6;fill:none;marker-end:url(#arr)}
+  .fz{fill:#dde6f4;stroke:#6f8fc0;stroke-width:1.6}
+  .tr{fill:#f8cbc5;stroke:#d0544c;stroke-width:1.6}
+  .np{fill:#e1f3dc;stroke:#5c9e57;stroke-width:1.4}
+  .frame{fill:none;stroke:#333;stroke-width:1}
+  .rd{fill:none;stroke:#d62828;stroke-width:1.4;stroke-dasharray:5 4}
+</style>
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#222"/></marker>
+  <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#d62828"/></marker>
+  <radialGradient id="hot"><stop offset="0" stop-color="#fde725"/><stop offset=".35" stop-color="#7ad151"/><stop offset=".65" stop-color="#22a884" stop-opacity=".9"/><stop offset="1" stop-color="#440154" stop-opacity="0"/></radialGradient>
+  <radialGradient id="grey"><stop offset="0" stop-color="#e6e6e6"/><stop offset=".6" stop-color="#888"/><stop offset="1" stop-color="#111" stop-opacity="0"/></radialGradient>
+  <radialGradient id="blue"><stop offset="0" stop-color="#2166ac"/><stop offset=".7" stop-color="#4393c3"/><stop offset="1" stop-color="#4393c3" stop-opacity="0"/></radialGradient>
+
+  <symbol id="lock" viewBox="0 0 16 18"><path d="M4 8.5V5.5a4 4 0 0 1 8 0v3" fill="none" stroke="#2b2b2b" stroke-width="2.2"/><rect x="1.5" y="8" width="13" height="9.5" rx="1.6" fill="#2b2b2b"/><circle cx="8" cy="12.7" r="1.5" fill="#fff"/></symbol>
+  <symbol id="flame" viewBox="0 0 16 20"><path d="M8 .5C9.2 5 14.5 7 14.5 12.8a6.5 6.5 0 0 1-13 0C1.5 9.2 4 7.6 4.8 5c1.6 2 1.9 3.6 1.6 5.2C8.6 8 8.6 4.6 8 .5z" fill="#e8590c"/><path d="M8 10.8c1.1 2.1 3.1 2.7 2.8 5.2a2.85 2.85 0 0 1-5.6 0C5 14.2 6.9 13 8 10.8z" fill="#ffd43b"/></symbol>
+
+  <!-- Toy GA++ scene: red mug (handle = queried part) and a spoon -->
+  <symbol id="scene" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#b08660"/>
+    <g stroke="#94704d" stroke-width="1.3" fill="none" opacity=".8">
+      <path d="M0 12C30 9 62 16 100 11"/><path d="M0 31C35 28 66 35 100 30"/><path d="M0 50C28 47 70 54 100 49"/><path d="M0 70C33 67 64 74 100 69"/><path d="M0 89C30 86 66 93 100 88"/>
+    </g>
+    <path d="M24.5 39L18 82" stroke="#5f6670" stroke-width="4.8" stroke-linecap="round"/>
+    <path d="M24.5 39L18 82" stroke="#d3d8de" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="25" cy="29" rx="7.5" ry="10.5" fill="#d3d8de" stroke="#5f6670" stroke-width="1"/>
+    <path d="M64 45C81 45 81 67 64 67" fill="none" stroke="#3b4652" stroke-width="6.4"/>
+    <path d="M64 45C81 45 81 67 64 67" fill="none" stroke="#e3572b" stroke-width="4.2"/>
+    <rect x="40" y="36" width="26" height="37" rx="4" fill="#e3572b" stroke="#3b4652" stroke-width="1"/>
+    <ellipse cx="53" cy="36.5" rx="13" ry="3.6" fill="#a93d1c" stroke="#3b4652" stroke-width="1"/>
+  </symbol>
+
+  <!-- GT grasp rectangles on the handle (the instruction's part) -->
+  <symbol id="gtHandle" viewBox="0 0 100 100">
+    <g fill="none" stroke="#ffd400" stroke-width="1.6">
+      <rect x="70" y="53.5" width="13" height="5"/>
+      <rect x="67.5" y="46.5" width="13" height="5" transform="rotate(-35 74 49)"/>
+      <rect x="67.5" y="60.5" width="13" height="5" transform="rotate(35 74 63)"/>
+    </g>
+  </symbol>
+  <symbol id="gtOthers" viewBox="0 0 100 100">
+    <g fill="none" stroke="#ffd400" stroke-width="1.6">
+      <rect x="48" y="34" width="10" height="4" transform="rotate(90 53 36)"/>
+      <rect x="16.5" y="26.5" width="17" height="5"/>
+      <rect x="16.5" y="60" width="10" height="4" transform="rotate(8 21.5 62)"/>
+    </g>
+  </symbol>
+
+  <!-- Prior outputs -->
+  <symbol id="qmap" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#440154"/><use href="#scene" width="100" height="100" opacity=".18"/>
+    <ellipse cx="76" cy="56" rx="7" ry="12" fill="url(#hot)"/>
+    <ellipse cx="53" cy="36" rx="12" ry="6" fill="url(#hot)"/>
+    <ellipse cx="25" cy="29" rx="10" ry="8" fill="url(#hot)"/>
+    <ellipse cx="21.5" cy="62" rx="6" ry="8" fill="url(#hot)"/>
+  </symbol>
+  <symbol id="cosmap" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#d6604d"/>
+    <ellipse cx="53" cy="36" rx="12" ry="6" fill="url(#blue)"/><ellipse cx="76" cy="50" rx="8" ry="8" fill="url(#blue)" opacity=".6"/>
+  </symbol>
+  <symbol id="sinmap" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#f2efe9"/>
+    <ellipse cx="74" cy="49" rx="7" ry="6" fill="url(#blue)"/><ellipse cx="74" cy="63" rx="7" ry="6" fill="#d6604d" opacity=".8"/>
+  </symbol>
+  <symbol id="wmap" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#111"/>
+    <ellipse cx="76" cy="56" rx="7" ry="12" fill="url(#grey)"/><ellipse cx="53" cy="36" rx="12" ry="6" fill="url(#grey)" opacity=".7"/>
+    <ellipse cx="25" cy="29" rx="10" ry="8" fill="url(#grey)"/><ellipse cx="21.5" cy="62" rx="6" ry="8" fill="url(#grey)" opacity=".6"/>
+  </symbol>
+  <!-- Grounder output / fused map -->
+  <symbol id="pmap" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#440154"/><use href="#scene" width="100" height="100" opacity=".18"/>
+    <ellipse cx="54" cy="55" rx="15" ry="20" fill="url(#hot)" opacity=".28"/>
+    <path d="M64 45C81 45 81 67 64 67" fill="none" stroke="#fde725" stroke-width="6" opacity=".55"/>
+    <ellipse cx="75" cy="56" rx="8" ry="13" fill="url(#hot)"/>
+  </symbol>
+  <symbol id="fmap" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#440154"/><use href="#scene" width="100" height="100" opacity=".18"/>
+    <ellipse cx="76" cy="56" rx="7" ry="12" fill="url(#hot)"/>
+    <ellipse cx="53" cy="36" rx="8" ry="4" fill="url(#hot)" opacity=".2"/>
+  </symbol>
+  <!-- Training targets -->
+  <symbol id="maskgt" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#000"/>
+    <path d="M64 45C81 45 81 67 64 67" fill="none" stroke="#fff" stroke-width="5.5"/>
+  </symbol>
+  <symbol id="qtarget" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#000"/><use href="#scene" width="100" height="100" opacity=".12"/>
+    <g fill="#fff">
+      <rect x="74.33" y="53.5" width="4.33" height="5"/>
+      <rect x="71.83" y="46.5" width="4.33" height="5" transform="rotate(-35 74 49)"/>
+      <rect x="71.83" y="60.5" width="4.33" height="5" transform="rotate(35 74 63)"/>
+      <rect x="51.33" y="34" width="3.33" height="4" transform="rotate(90 53 36)"/>
+      <rect x="22.17" y="26.5" width="5.67" height="5"/>
+      <rect x="19.83" y="60" width="3.33" height="4" transform="rotate(8 21.5 62)"/>
+    </g>
+  </symbol>
+</defs>
+
+<rect width="1730" height="1100" fill="#fff"/>
+
+<!-- ===================== MODEL BOX ===================== -->
+<rect x="20" y="60" width="1100" height="745" rx="36" fill="#e9eefb" stroke="#8094cc" stroke-width="2"/>
+
+<!-- Legend -->
+<rect x="45" y="74" width="1050" height="32" rx="6" fill="#f4f0fb" stroke="#cbbbe9"/>
+<use href="#lock" x="58" y="81" width="14" height="16"/><text x="78" y="95" class="s">Frozen (no gradient)</text>
+<use href="#flame" x="222" y="80" width="14" height="18"/><text x="242" y="95" class="s">Trainable</text>
+<rect x="320" y="82" width="22" height="16" rx="3" class="np"/><text x="348" y="95" class="s">No learnable params</text>
+<circle cx="490" cy="90" r="8" fill="#fff" stroke="#222" stroke-width="1.4"/><circle cx="490" cy="90" r="2" fill="#222"/><text x="504" y="95" class="s">element-wise product</text>
+<path d="M650 90H690" class="ar"/><text x="698" y="95" class="s">inference flow</text>
+<rect x="800" y="82" width="26" height="16" class="rd"/><text x="834" y="95" class="s">supervised by a training loss (see bottom)</text>
+
+<!-- Inputs -->
+<text x="115" y="290" class="m c" font-size="28" font-weight="700">I</text>
+<svg x="55" y="300" width="120" height="120" viewBox="0 0 100 100"><use href="#scene" width="100" height="100"/></svg>
+<rect x="55" y="300" width="120" height="120" class="frame"/>
+<text x="115" y="440" class="s c">RGB image</text>
+<text x="115" y="455" class="g c">224×224, mean-subtracted</text>
+
+<polygon points="85,630 115,612 145,630 115,648" fill="#a3e05f" stroke="#5b9a33" stroke-width="1.5"/>
+<text x="115" y="636" class="m c" font-size="19">e</text>
+<text x="115" y="678" class="m c" font-size="16">"Grasp the mug</text>
+<text x="115" y="697" class="m c" font-size="16">by its handle"</text>
+<text x="115" y="714" class="g c">(part-level instruction)</text>
+
+<text x="45" y="782" font-size="42" font-weight="800" fill="#4b4be8">G2G</text>
+<text x="148" y="781" font-size="16" fill="#4b4be8" font-weight="600">Ground-then-Grasp</text>
+
+<!-- image trunk -->
+<path d="M175 360H210V220H248" class="ar"/>
+<path d="M210 360V485H258" class="ar"/>
+<circle cx="210" cy="360" r="3.5" fill="#222"/>
+<path d="M145 630H258" class="ar"/>
+
+<!-- Grasp Prior branch -->
+<text x="240" y="140" class="h">Grasp Prior — GR-ConvNet3</text>
+<use href="#flame" x="458" y="125" width="14" height="18"/>
+<text x="240" y="157" class="g">adapted from LGD · trained from scratch · language-free (image only)</text>
+<polygon points="250,170 330,190 330,250 250,270" class="tr"/>
+<text x="290" y="217" class="s c" font-weight="600">Conv ×3</text><text x="290" y="234" class="g c">↓ /4</text>
+<g class="tr"><rect x="342" y="192" width="12" height="56"/><rect x="358" y="192" width="12" height="56"/><rect x="374" y="192" width="12" height="56"/><rect x="390" y="192" width="12" height="56"/><rect x="406" y="192" width="12" height="56"/></g>
+<text x="380" y="266" class="g c">5× ResBlock</text>
+<polygon points="430,190 510,170 510,270 430,250" class="tr"/>
+<text x="470" y="217" class="s c" font-weight="600">ConvT ×3</text><text x="470" y="234" class="g c">↑ ×4, 4 heads</text>
+<path d="M510 220H553" class="ar"/>
+<path d="M510 262H530V300H553" class="ar"/>
+
+<svg x="555" y="190" width="60" height="60" viewBox="0 0 100 100"><use href="#qmap" width="100" height="100"/></svg>
+<rect x="555" y="190" width="60" height="60" class="frame"/><text x="560" y="206" class="w m">Q</text>
+<svg x="571" y="262" width="44" height="44" viewBox="0 0 100 100"><use href="#cosmap" width="100" height="100"/></svg><rect x="571" y="262" width="44" height="44" class="frame"/>
+<svg x="563" y="270" width="44" height="44" viewBox="0 0 100 100"><use href="#sinmap" width="100" height="100"/></svg><rect x="563" y="270" width="44" height="44" class="frame"/>
+<svg x="555" y="278" width="44" height="44" viewBox="0 0 100 100"><use href="#wmap" width="100" height="100"/></svg><rect x="555" y="278" width="44" height="44" class="frame"/>
+<text x="559" y="293" class="w m" font-size="12">W</text>
+<text x="628" y="290" class="s">cos 2θ, sin 2θ, W</text>
+<text x="628" y="306" class="g" font-style="italic">→ decoding ②</text>
+<rect x="547" y="183" width="76" height="147" rx="6" class="rd"/>
+<text x="585" y="348" class="c red" font-size="13"><tspan class="m" font-size="16">ℒ</tspan><tspan dy="3" font-size="10">prior</tspan><tspan dy="-3"> (R1)</tspan></text>
+<text x="625" y="212" class="g">Q: grasp quality</text>
+
+<!-- Part Grounder branch -->
+<rect x="235" y="362" width="425" height="358" rx="18" fill="#f6f8fe" stroke="#8094cc" stroke-width="1.4" stroke-dasharray="6 4"/>
+<text x="250" y="386" class="h">Part Grounder — CLIPSeg</text>
+<text x="250" y="403" class="g">CIDAS/clipseg-rd64-refined · processor: resize 352 + tokenize</text>
+
+<polygon points="260,425 420,445 420,525 260,545" class="fz"/>
+<use href="#lock" x="268" y="432" width="14" height="16"/>
+<text x="340" y="478" class="s c" font-weight="600">CLIP Vision</text><text x="340" y="495" class="s c" font-weight="600">Encoder</text><text x="340" y="512" class="g c">ViT-B/16</text>
+<polygon points="260,580 420,598 420,662 260,680" class="fz"/>
+<use href="#lock" x="268" y="587" width="14" height="16"/>
+<text x="340" y="627" class="s c" font-weight="600">CLIP Text</text><text x="340" y="644" class="s c" font-weight="600">Encoder</text>
+
+<path d="M420 485H473" class="ar"/><text x="446" y="477" class="g c" font-size="10">skip feats</text>
+<path d="M420 630H473" class="ar"/><text x="446" y="622" class="g c" font-size="10">text emb.</text>
+
+<rect x="475" y="425" width="60" height="255" rx="8" class="tr"/>
+<use href="#flame" x="498" y="432" width="14" height="18"/>
+<text transform="translate(510 568) rotate(-90)" class="c" font-size="13" font-weight="800" fill="#1d2433">FiLM + Transformer Decoder</text>
+<path d="M535 552H573" class="ar"/>
+
+<text x="610" y="508" class="g c">part logits (↑224)</text>
+<svg x="575" y="517" width="70" height="70" viewBox="0 0 100 100"><use href="#pmap" width="100" height="100"/></svg>
+<rect x="575" y="517" width="70" height="70" class="frame"/><text x="580" y="533" class="w m">M</text>
+<rect x="569" y="512" width="82" height="81" rx="6" class="rd"/>
+<text x="610" y="611" class="c red" font-size="13"><tspan class="m" font-size="16">ℒ</tspan><tspan dy="3" font-size="10">ground</tspan><tspan dy="-3"> (R2)</tspan></text>
+
+<!-- Composition -->
+<rect x="740" y="165" width="365" height="495" rx="14" fill="#eef8ec" stroke="#5c9e57" stroke-width="1.4" stroke-dasharray="6 4"/>
+<path d="M645 552H748" class="ar"/>
+<rect x="750" y="534" width="75" height="36" rx="6" class="np"/>
+<text x="787" y="557" class="c m" font-size="16">σ(M / T)</text>
+<path d="M825 552H848" class="ar"/>
+<svg x="850" y="517" width="70" height="70" viewBox="0 0 100 100"><use href="#pmap" width="100" height="100"/></svg>
+<rect x="850" y="517" width="70" height="70" class="frame"/><text x="855" y="533" class="w m">P</text>
+<text x="885" y="604" class="s c">part probability</text>
+
+<path d="M615 220H938" class="ar"/>
+<path d="M920 552H960V242" class="ar"/>
+<circle cx="960" cy="220" r="20" fill="#fff" stroke="#222" stroke-width="2"/><circle cx="960" cy="220" r="4" fill="#222"/>
+<path d="M980 220H1008" class="ar"/>
+<svg x="1010" y="185" width="70" height="70" viewBox="0 0 100 100"><use href="#fmap" width="100" height="100"/></svg>
+<rect x="1010" y="185" width="70" height="70" class="frame"/><text x="1015" y="201" class="w m">F</text>
+<text x="1045" y="272" class="g c">fused map</text>
+
+<text x="850" y="290" class="c m" font-size="19">F = Q<tspan dy="-8" font-size="12">α</tspan><tspan dy="8"> · P</tspan><tspan dy="-8" font-size="12">1−α</tspan></text>
+<text x="850" y="312" class="s c">soft product of experts</text>
+<text x="850" y="330" class="g c">ablation “hard”: Q · 1[P &gt; 0.5]</text>
+
+<text x="922" y="632" class="c" font-size="13.5" font-weight="700" fill="#2f6b2b">Composition (no learnable params)</text>
+<text x="922" y="649" class="g c">α, T, λ grid-searched on val, then frozen</text>
+
+<!-- ===================== DECODING / POST-PROCESSING ===================== -->
+<path d="M1080 220H1148" class="ar"/>
+<rect x="1140" y="60" width="570" height="745" rx="24" fill="#fafafc" stroke="#9aa0b4" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="1425" y="94" class="h c" font-size="18">Decoding = post-processing</text>
+<text x="1425" y="114" class="g c" font-size="12">deterministic · no learnable params · no gradient · 224×224 maps → 1 rectangle</text>
+
+<!-- S1 -->
+<svg x="1150" y="165" width="110" height="110" viewBox="0 0 100 100">
+  <use href="#scene" width="100" height="100"/><use href="#fmap" width="100" height="100" opacity=".55"/>
+  <g fill="#ff2d2d" stroke="#fff" stroke-width=".8"><circle cx="76.5" cy="56" r="2.6"/><circle cx="74" cy="49" r="2.6"/><circle cx="74" cy="63" r="2.6"/></g>
+  <g fill="none" stroke="#ff2d2d" stroke-width="1"><circle cx="53" cy="36" r="2.4"/><circle cx="25" cy="29" r="2.4"/></g>
+</svg>
+<rect x="1150" y="165" width="110" height="110" class="frame"/>
+<text x="1280" y="187" class="h" font-size="14.5">① Peak finding on F</text>
+<text x="1280" y="207" class="s">Gaussian smoothing (σ = 2)</text>
+<text x="1280" y="224" class="s">peak_local_max → top-K = 10 peaks (x, y)</text>
+<text x="1280" y="241" class="g">min. distance 5 px</text>
+<path d="M1205 277V313" class="ar"/>
+
+<!-- S2 -->
+<svg x="1150" y="315" width="110" height="110" viewBox="0 0 100 100">
+  <use href="#scene" width="100" height="100"/><use href="#gtHandle" width="100" height="100"/><use href="#gtOthers" width="100" height="100" opacity=".85"/>
+</svg>
+<rect x="1150" y="315" width="110" height="110" class="frame"/>
+<text x="1280" y="337" class="h" font-size="14.5">② Read the 4 maps at each peak</text>
+<text x="1280" y="357" class="s m" font-size="14">θ = ½ · atan2(sin 2θ, cos 2θ)</text>
+<text x="1280" y="375" class="s"><tspan class="m" font-size="14">w = W · 112 px</tspan>  (W ∈ [0,1], scale = H/2)</text>
+<text x="1280" y="393" class="s"><tspan class="m" font-size="14">h = 0.5 · w</tspan>  (fixed ratio, not predicted)</text>
+<text x="1280" y="411" class="s">→ K candidate rectangles (x, y, w, h, θ)</text>
+<svg x="1640" y="333" width="38" height="38" viewBox="0 0 100 100"><use href="#wmap" width="100" height="100"/></svg>
+<rect x="1640" y="333" width="38" height="38" class="frame"/>
+<text x="1659" y="385" class="g c" font-size="10">from prior</text>
+
+<path d="M1205 427V463" class="ar"/>
+
+<!-- S3 -->
+<svg x="1150" y="465" width="110" height="110" viewBox="0 0 100 100">
+  <use href="#scene" width="100" height="100"/>
+  <g fill="none" stroke="#e6e6e6" stroke-width="1" stroke-dasharray="2 1.5" opacity=".9">
+    <rect x="67.5" y="46.5" width="13" height="5" transform="rotate(-35 74 49)"/><rect x="67.5" y="60.5" width="13" height="5" transform="rotate(35 74 63)"/>
+    <rect x="48" y="34" width="10" height="4" transform="rotate(90 53 36)"/><rect x="16.5" y="26.5" width="17" height="5"/>
+  </g>
+  <rect x="70" y="53.5" width="13" height="5" fill="none" stroke="#2bd94a" stroke-width="2"/>
+</svg>
+<rect x="1150" y="465" width="110" height="110" class="frame"/>
+<text x="1280" y="487" class="h" font-size="14.5">③ Part-aware re-ranking</text>
+<text x="1280" y="507" class="s m" font-size="14">s = log F(x,y) + λ · log mean P(inner ½ rect)</text>
+<text x="1280" y="525" class="s">keep argmax s → <tspan font-weight="700">1 rectangle</tspan></text>
+<text x="1280" y="543" class="s">rescale × (native size / 224)</text>
+<svg x="1640" y="483" width="38" height="38" viewBox="0 0 100 100"><use href="#pmap" width="100" height="100"/></svg>
+<rect x="1640" y="483" width="38" height="38" class="frame"/>
+<text x="1659" y="535" class="g c" font-size="10">P (grounder)</text>
+
+<path d="M1205 577V613" class="ar"/>
+
+<!-- S4 -->
+<svg x="1150" y="615" width="110" height="110" viewBox="0 0 100 100">
+  <use href="#scene" width="100" height="100"/><rect x="70" y="53.5" width="13" height="5" fill="none" stroke="#2bd94a" stroke-width="2"/>
+</svg>
+<rect x="1150" y="615" width="110" height="110" class="frame"/>
+<text x="1282" y="675" class="c m" font-size="15">vs</text>
+<svg x="1305" y="615" width="110" height="110" viewBox="0 0 100 100">
+  <use href="#scene" width="100" height="100"/><use href="#gtHandle" width="100" height="100"/>
+</svg>
+<rect x="1305" y="615" width="110" height="110" class="frame"/>
+<text x="1205" y="740" class="g c">prediction</text>
+<text x="1360" y="740" class="g c">GT of this instruction</text>
+<text x="1435" y="637" class="h" font-size="14.5">④ Evaluation (top-1)</text>
+<text x="1435" y="657" class="s">success ⇔ IoU &gt; 0.25</text>
+<text x="1435" y="674" class="s">and |Δθ| ≤ 30° (mod π)</text>
+<text x="1435" y="691" class="s">vs. any GT rect of the part</text>
+<text x="1435" y="708" class="g">pixel IoU at native resolution</text>
+
+<rect x="1152" y="750" width="546" height="46" rx="8" fill="#fff4c2" stroke="#e0a100" stroke-width="1.4"/>
+<text x="1425" y="769" class="c" font-size="13" font-weight="700" fill="#7a4b00">★ The rectangle is NOT predicted directly by any network.</text>
+<text x="1425" y="787" class="c" font-size="12" fill="#7a4b00">It is decoded from dense per-pixel maps (Q, cos2θ, sin2θ, W) + P, as in GR-ConvNet / LGD.</text>
+
+<!-- ===================== TRAINING ROW ===================== -->
+<text x="22" y="828" font-size="13" font-weight="700" fill="#6a7080" letter-spacing="1">TRAINING DATA &amp; LOSSES — two independent runs</text>
+
+<!-- Data -->
+<rect x="20" y="838" width="500" height="222" rx="16" fill="#f8f9fb" stroke="#9aa0b4" stroke-width="1.4"/>
+<text x="35" y="862" class="h" font-size="15">Data: Grasp-Anything++ (GA++)</text>
+<text x="35" y="879" class="g">one row = (image, object, part) · official object-ID splits</text>
+<svg x="40" y="890" width="80" height="80" viewBox="0 0 100 100"><use href="#scene" width="100" height="100"/></svg><rect x="40" y="890" width="80" height="80" class="frame"/>
+<rect x="158" y="890" width="80" height="80" rx="8" fill="#fff" stroke="#5b9a33" stroke-width="1.4"/>
+<text x="198" y="920" class="c m" font-size="12">"Grasp the</text><text x="198" y="936" class="c m" font-size="12">mug by its</text><text x="198" y="952" class="c m" font-size="12">handle"</text>
+<svg x="276" y="890" width="80" height="80" viewBox="0 0 100 100"><use href="#maskgt" width="100" height="100"/></svg><rect x="276" y="890" width="80" height="80" class="frame"/>
+<svg x="394" y="890" width="80" height="80" viewBox="0 0 100 100"><use href="#scene" width="100" height="100"/><use href="#gtHandle" width="100" height="100"/></svg><rect x="394" y="890" width="80" height="80" class="frame"/>
+<text x="80" y="987" class="g c">image</text>
+<text x="198" y="987" class="g c">instruction (.pkl)</text>
+<text x="316" y="987" class="g c">part_mask (.npy)</text>
+<text x="434" y="987" class="g c">positive_grasp (.pt)</text>
+<text x="35" y="1012" class="s" font-size="11.5">splits: train Seen / test Seen / test Unseen (overlap images removed)</text>
+<text x="35" y="1029" class="s" font-size="11.5">square images resized to 224 (bilinear); masks resized nearest</text>
+<text x="35" y="1046" class="s" font-size="11.5">grasp label = rotated rect (x, y, w, h, θ) in pixels</text>
+
+<!-- R1 -->
+<rect x="540" y="838" width="580" height="222" rx="16" fill="#fff6ef" stroke="#e08a2e" stroke-width="1.4"/>
+<text x="555" y="862" class="h" font-size="15">R1 — train Grasp Prior</text>
+<use href="#flame" x="735" y="848" width="14" height="18"/>
+<text x="555" y="879" class="g">1 sample per image · no text input</text>
+<svg x="560" y="890" width="80" height="80" viewBox="0 0 100 100"><use href="#scene" width="100" height="100"/><use href="#gtHandle" width="100" height="100"/><use href="#gtOthers" width="100" height="100"/></svg><rect x="560" y="890" width="80" height="80" class="frame"/>
+<path d="M644 930H681" class="ar"/><text x="662" y="922" class="g c" font-size="10">render</text>
+<svg x="685" y="890" width="80" height="80" viewBox="0 0 100 100"><use href="#qtarget" width="100" height="100"/></svg><rect x="685" y="890" width="80" height="80" class="frame"/>
+<text x="600" y="987" class="g c">GT rects (all parts)</text>
+<text x="725" y="1003" class="g c">+ cos2θ, sin2θ, W</text>
+<text x="725" y="987" class="g c">target Q (w/3 strip)</text>
+<text x="790" y="904" class="red" font-size="17"><tspan class="m" font-size="19">ℒ</tspan><tspan dy="4" font-size="11">prior</tspan><tspan dy="-4" class="m"> = Σ</tspan><tspan dy="4" font-size="11" class="m">k</tspan><tspan dy="-4"> SmoothL1(</tspan><tspan class="m">ŷ</tspan><tspan dy="4" font-size="11" class="m">k</tspan><tspan dy="-4">, </tspan><tspan class="m">y</tspan><tspan dy="4" font-size="11" class="m">k</tspan><tspan dy="-4">)</tspan></text>
+<text x="790" y="924" class="s"><tspan class="m">k</tspan> ∈ {Q, cos 2θ, sin 2θ, W}</text>
+<text x="790" y="948" class="s">target = grasps of all parts in the image</text>
+<text x="790" y="965" class="s">outside rects: Q = 0, θ = 0, W = 0</text>
+<text x="790" y="988" class="s">updates all GR-ConvNet3 weights</text>
+<text x="790" y="1012" class="g">AdamW · lr 1e-3 · 15 ep · bs 32 · bf16 AMP</text>
+<text x="790" y="1028" class="g">best.pt = max val union-success</text>
+
+<!-- R2 -->
+<rect x="1140" y="838" width="570" height="222" rx="16" fill="#fff1f0" stroke="#d0544c" stroke-width="1.4"/>
+<text x="1155" y="862" class="h" font-size="15">R2 — train Part Grounder</text>
+<use href="#flame" x="1352" y="848" width="14" height="18"/>
+<text x="1155" y="879" class="g">1 sample per (image, part instruction)</text>
+<svg x="1160" y="890" width="80" height="80" viewBox="0 0 100 100"><use href="#pmap" width="100" height="100"/></svg><rect x="1160" y="890" width="80" height="80" class="frame"/>
+<text x="1250" y="935" class="c m" font-size="13">vs</text>
+<svg x="1260" y="890" width="80" height="80" viewBox="0 0 100 100"><use href="#maskgt" width="100" height="100"/></svg><rect x="1260" y="890" width="80" height="80" class="frame"/>
+<text x="1200" y="987" class="g c">pred. M</text>
+<text x="1300" y="987" class="g c">GT part mask</text>
+<text x="1360" y="904" class="red" font-size="16"><tspan class="m" font-size="19">ℒ</tspan><tspan dy="4" font-size="11">ground</tspan><tspan dy="-4"> = BCE(</tspan><tspan class="m">M</tspan>, mask)</text>
+<text x="1393" y="924" class="red" font-size="16">+ 1 − Dice(σ(<tspan class="m">M</tspan>), mask)</text>
+<text x="1360" y="948" class="s"><tspan font-weight="700">frozen:</tspan> CLIP image + text encoders (eval mode)</text>
+<text x="1360" y="965" class="s"><tspan font-weight="700">updated:</tspan> FiLM + transformer decoder only</text>
+<text x="1360" y="1012" class="g">AdamW · lr 1e-4 · 10 ep · bs 32 · bf16 AMP</text>
+<text x="1360" y="1028" class="g">best.pt = max val mask mIoU</text>
+
+<text x="865" y="1086" class="c" font-size="13" font-style="italic" fill="#444">R1 and R2 are trained separately (no joint fine-tuning). No gradient flows through composition or decoding; α, T, λ are tuned on val afterwards.</text>
+</svg>

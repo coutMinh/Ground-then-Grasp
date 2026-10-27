@@ -156,10 +156,8 @@ def _(gallery_form, mo, runtime):
 """
 
 
-def build():
-    cell = TEMPLATE
-    compile(cell, str(DESTINATION), "exec")
-    DESTINATION.write_text(cell, encoding="utf-8", newline="\n")
+def render_gallery_cells(cell=TEMPLATE):
+    """Return the notebook cells without reading or writing external notebooks."""
     body = cell
     for name, default in (
         ("run_id", '"ours-full-unseen-01"'),
@@ -174,6 +172,14 @@ def build():
         START + "\n" + FORM + "\n".join("    " + line if line else "" for line in body.splitlines())
     )
     generated += "\n    return\n\n" + END + "\n\n\n"
+    return generated
+
+
+def build():
+    cell = TEMPLATE
+    compile(cell, str(DESTINATION), "exec")
+    DESTINATION.write_text(cell, encoding="utf-8", newline="\n")
+    generated = render_gallery_cells(cell)
     original = NOTEBOOK.read_text(encoding="utf-8")
     if START in original:
         before, rest = original.split(START, 1)
