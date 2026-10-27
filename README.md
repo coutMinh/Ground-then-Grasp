@@ -23,10 +23,19 @@ workspace/
   artifacts/                  # data, ZIP cache, checkpoints, registry, reports
 ```
 
-Run `00_environment.py`, `01_data.py`, `02_train.py`, `03_evaluate.py` in order.
-Use the same workspace path. Each notebook installs the cloned package into
-its interpreter; model and dataset logic stays in `g2g/`. Publish the local
-code to GitHub before trying the clone-based workflow.
+Upload sibling `g2g_pipeline.py` to run setup, data, training and evaluation
+in one runtime. The four numbered notebooks remain as references; separate
+molab runtimes do not imply shared storage. Model and dataset logic stays
+in `g2g/`. Publish the code to GitHub before the clone-based workflow.
+
+To inspect saved predictions, form 6 draws GT/prediction/overlay panels and
+prints instructions, native-coordinate grasps and IoU. For an already running
+cloud notebook, paste sibling `view_predictions_cell.py` into one new cell.
+Both cells invoke `python -m g2g visualize-predictions`; rendering lives in
+`g2g/viz/predictions.py`. Publish this code to GitHub first. Enable the form's
+checkout-update checkbox once, or set `_update_checkout = True` in the pasted
+cell, to fetch a published branch/tag/SHA. The update refuses local edits and
+checks for the module before switching commits; artifacts stay outside the repo.
 
 ## Install and checks
 

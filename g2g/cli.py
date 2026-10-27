@@ -108,6 +108,17 @@ def main(argv: list[str] | None = None) -> None:
     tables_parser.add_argument("--results-root", required=True)
     tables_parser.add_argument("--run-ids", nargs="+", required=True)
     tables_parser.add_argument("--output", required=True)
+    predictions_parser = subparsers.add_parser(
+        "visualize-predictions", help="Draw saved grasp predictions and native ground truth"
+    )
+    predictions_parser.add_argument("--run-dir", required=True)
+    predictions_parser.add_argument("--data-root", required=True)
+    predictions_parser.add_argument("--output", required=True)
+    predictions_parser.add_argument("--limit", type=int, default=6)
+    predictions_parser.add_argument("--seed", type=int, default=42)
+    predictions_parser.add_argument(
+        "--selection", choices=["mixed", "random", "success", "failure"], default="mixed"
+    )
     arguments = parser.parse_args(argv)
     if arguments.command == "probe":
         from g2g.utils.environment import probe
@@ -203,6 +214,17 @@ def main(argv: list[str] | None = None) -> None:
         from g2g.eval.tables import make_tables
 
         report = make_tables(arguments.results_root, arguments.run_ids, arguments.output)
+    elif arguments.command == "visualize-predictions":
+        from g2g.viz.predictions import visualize_predictions
+
+        report = visualize_predictions(
+            arguments.run_dir,
+            arguments.data_root,
+            arguments.output,
+            limit=arguments.limit,
+            seed=arguments.seed,
+            selection=arguments.selection,
+        )
     elif arguments.command == "sweep":
         from g2g.eval.sweep import sweep
 
