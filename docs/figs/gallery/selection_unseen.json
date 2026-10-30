@@ -1,0 +1,133 @@
+{
+  "run_id": "ours-full-unseen-01",
+  "system": "ours",
+  "split": "test_unseen",
+  "selection": "mixed",
+  "seed": 42,
+  "count": 6,
+  "selection_note": "Seeded successes and failures for illustration; not a representative accuracy estimate.",
+  "population": {
+    "success": 215,
+    "failure": 386
+  },
+  "predictions_sha256": "07efc610e0fd097218d6d2ca1d6a6b39e7e5a40a9a76ce77523acefe26be2219",
+  "manifest_sha256": "c35f3f1f92f19e69c6c1a28cf2fe956ea164c51d0403c790c404881847f051fb",
+  "evaluation_config_sha256": "65bf9905ca33acb5597507c90a8b8924ccbfec29b8d03b53af6bb15eb726751f",
+  "contact_sheet": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-unseen-01/contact_sheet.png",
+  "samples": [
+    {
+      "sample_id": "83abaaca95944c0cfc7433d5af219e34a65f9bb9f69df4b7d0b1844ebbc293e4_0_1",
+      "instruction": "Grasp lamp at its stand.",
+      "success": true,
+      "grasp_iou": 0.4641814121285003,
+      "angle_deg": 8.828188014306335,
+      "prediction": {
+        "x": 260.0,
+        "y": 235.85714285714286,
+        "w": 76.62428719656808,
+        "h": 38.31214359828404,
+        "theta": -0.0853223204612732
+      },
+      "gt_count": 3,
+      "recomputed_success": true,
+      "recomputed_iou": 0.4641814121285003,
+      "matches_saved_metric": true,
+      "figure": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-unseen-01/01-83abaaca95944c0cfc7433d5af219e34a65f9bb9f69df4b7d0b1844ebbc293e4_0_1.png"
+    },
+    {
+      "sample_id": "353be51fd03b1bbb00289412ce4d2f6c3f3b5d4c0f5daf689d3bd3952d5327e3_0_0",
+      "instruction": "Grab candle on its wax.",
+      "success": true,
+      "grasp_iou": 0.46307015512850197,
+      "angle_deg": 0.24803307266075694,
+      "prediction": {
+        "x": 78.0,
+        "y": 161.57142857142858,
+        "w": 67.50829478672573,
+        "h": 33.754147393362864,
+        "theta": -0.07248981297016144
+      },
+      "gt_count": 17,
+      "recomputed_success": true,
+      "recomputed_iou": 0.46307015512850197,
+      "matches_saved_metric": true,
+      "figure": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-unseen-01/02-353be51fd03b1bbb00289412ce4d2f6c3f3b5d4c0f5daf689d3bd3952d5327e3_0_0.png"
+    },
+    {
+      "sample_id": "8aa4d62a134d9e2a10d3730e75492234a2728d5418f6bdbafd8c38092c73f91d_0_0",
+      "instruction": "Grasp candle at its wax.",
+      "success": true,
+      "grasp_iou": 0.2537313432835821,
+      "angle_deg": 21.279883203208904,
+      "prediction": {
+        "x": 92.85714285714286,
+        "y": 247.0,
+        "w": 42.66023145403181,
+        "h": 21.330115727015905,
+        "theta": -0.04468153789639473
+      },
+      "gt_count": 7,
+      "recomputed_success": true,
+      "recomputed_iou": 0.2537313432835821,
+      "matches_saved_metric": true,
+      "figure": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-unseen-01/03-8aa4d62a134d9e2a10d3730e75492234a2728d5418f6bdbafd8c38092c73f91d_0_0.png"
+    },
+    {
+      "sample_id": "df4e9b776e1f4b41e7ba7cb199c91729b21202f088f110fc22cc950f8ad21cf5_0_1",
+      "instruction": "Grip hairbrush on its handle.",
+      "success": false,
+      "grasp_iou": 0.0,
+      "angle_deg": 5.780995612423526,
+      "prediction": {
+        "x": 326.8571428571429,
+        "y": 165.28571428571428,
+        "w": 44.19598879132952,
+        "h": 22.09799439566476,
+        "theta": -0.08791769295930862
+      },
+      "gt_count": 15,
+      "recomputed_success": false,
+      "recomputed_iou": 0.0,
+      "matches_saved_metric": true,
+      "figure": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-unseen-01/04-df4e9b776e1f4b41e7ba7cb199c91729b21202f088f110fc22cc950f8ad21cf5_0_1.png"
+    },
+    {
+      "sample_id": "fd3bf1eba811c820732a0be37c3703e638a452198211e61920b18a2c20722284_0_2",
+      "instruction": "Lift hairbrush by its grip.",
+      "success": false,
+      "grasp_iou": 0.10471348083001236,
+      "angle_deg": 1.646365121429102,
+      "prediction": {
+        "x": 369.5714285714286,
+        "y": 230.2857142857143,
+        "w": 56.22350447518485,
+        "h": 28.111752237592427,
+        "theta": -0.0196714885532856
+      },
+      "gt_count": 28,
+      "recomputed_success": false,
+      "recomputed_iou": 0.10471348083001236,
+      "matches_saved_metric": true,
+      "figure": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-unseen-01/05-fd3bf1eba811c820732a0be37c3703e638a452198211e61920b18a2c20722284_0_2.png"
+    },
+    {
+      "sample_id": "f0bce28d6c66121bada351edc7dd643a532dd391d882fe1b22dcd15089edcfac_0_1",
+      "instruction": "Lift chopstick by its tapered end.",
+      "success": false,
+      "grasp_iou": 0.0726672171758877,
+      "angle_deg": 9.468446551353642,
+      "prediction": {
+        "x": 63.142857142857146,
+        "y": 107.71428571428572,
+        "w": 46.430268151419504,
+        "h": 23.215134075709752,
+        "theta": 0.004576106555759907
+      },
+      "gt_count": 1,
+      "recomputed_success": false,
+      "recomputed_iou": 0.0726672171758877,
+      "matches_saved_metric": true,
+      "figure": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-unseen-01/06-f0bce28d6c66121bada351edc7dd643a532dd391d882fe1b22dcd15089edcfac_0_1.png"
+    }
+  ]
+}

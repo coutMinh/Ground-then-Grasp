@@ -8,25 +8,25 @@
   "available_train_pool_images": 8344,
   "splits": {
     "train": {
-      "rows": 28,
-      "images": 8,
-      "sha256": "99a854f5d0019a2f8a40f017bfc87067961b0f8ac164f71c120ba61844903d75"
+      "rows": 27870,
+      "images": 8144,
+      "sha256": "752bad35df47feb599241454e7e57b3283a475ce19ea7ebd4bc0bdbbd04fcfdd"
     },
     "val": {
-      "rows": 9,
-      "images": 2,
-      "sha256": "d55a9e3c2d3c6254eb8a04787476dbd774bd10f14fed539536d33388e8d17e88"
+      "rows": 662,
+      "images": 200,
+      "sha256": "45eb0a2916ccdf39536ff32fbcab92ffdcb5ad7463222706c7d42b2623ea7c45"
     },
     "test_seen": {
-      "rows": 6,
-      "images": 2,
-      "sha256": "11c4ae37912d138b376fe6c28aa94df39d4e2d7b11526f19dff180cb560407b8"
+      "rows": 1376,
+      "images": 412,
+      "sha256": "8cce270b88e4443ad3f7498a6ca4185ea480710536bf5b35733c691255210de3"
     },
     "test_unseen": {
-      "rows": 6,
-      "images": 2,
-      "sha256": "0cd5b5f18bf4898763155b2fa35e28d5950583875f8679feb50dc12f75f8f3a4"
+      "rows": 601,
+      "images": 193,
+      "sha256": "c35f3f1f92f19e69c6c1a28cf2fe956ea164c51d0403c790c404881847f051fb"
     }
   },
-  "all_sha256": "eb7fa8b337a10f21144e91c8d3006e4adbbc6228c4559f3cb037a43d99c64f8b"
+  "all_sha256": "f89068991f954db7d073e026632e300f08a15020287c0ef9e0af9b62b311c75a"
 }

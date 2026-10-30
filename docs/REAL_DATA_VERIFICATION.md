@@ -4,7 +4,7 @@ The user confirmed completion of the owner's download form/license in this
 session before sample extraction. HF API/HEAD checks found both repositories
 public (`gated=false`, HTTP 200); a token was not needed for these checks.
 
-Pinned dataset revisions are recorded in `docs/dataset_access.json` and
+Pinned dataset revisions are recorded in `docs/verification/dataset_access.json` and
 `g2g/inspection/samples.py`. Extraction checks ZIP member CRC and records SHA-256.
 
 ## Observed before implementing the native parser
@@ -30,9 +30,9 @@ Pinned dataset revisions are recorded in `docs/dataset_access.json` and
 
 Twenty matched images are 416×416 RGB. All 20 label/instruction/mask/image sets
 parsed successfully; 10 overlays were rendered and the full contact sheet was
-visually inspected. Evidence: `real_file_inspection.json`,
-`verification_selection.json`, `overlay_verification.json`, and
-`figs/schema_contact_sheet.jpg`. The mapping and geometry gate passes.
+visually inspected. Evidence: `verification/real_file_inspection.json`,
+`verification/verification_selection.json`, `verification/overlay_verification.json`, and
+`verification/schema_contact_sheet.jpg`. The mapping and geometry gate passes.
 
 **Annotation quality caveat:** some references are semantically noisy (e.g.
 an instruction naming a ball over a lime), some part masks/grasps disagree,
