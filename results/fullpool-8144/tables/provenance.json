@@ -1,0 +1,95 @@
+{
+  "run_ids": [
+    "ours-full-seen-01",
+    "ours-full-unseen-01",
+    "prior-full-seen-01",
+    "prior-full-unseen-01",
+    "zs-hard-full-seen-01",
+    "zs-hard-full-unseen-01",
+    "ft-hard-full-seen-01",
+    "ft-hard-full-unseen-01",
+    "mask-peak-full-seen-01",
+    "mask-peak-full-unseen-01",
+    "soft-full-seen-01",
+    "soft-full-unseen-01",
+    "oracle-mask-full-seen-01",
+    "oracle-mask-full-unseen-01"
+  ],
+  "test_manifest_hashes": {
+    "test_seen": "8cce270b88e4443ad3f7498a6ca4185ea480710536bf5b35733c691255210de3",
+    "test_unseen": "c35f3f1f92f19e69c6c1a28cf2fe956ea164c51d0403c790c404881847f051fb"
+  },
+  "registry_sha256": "fb95cdf3a1177a9b11c00ca613d6807c6e766db0b0b2df4049f6c22a947e6804",
+  "rows": [
+    {
+      "system": "ft_hard",
+      "seeds": 1,
+      "seen": 0.3640988372093023,
+      "unseen": 0.33444259567387685,
+      "harmonic": 0.3486411956854782,
+      "seen_std": null,
+      "unseen_std": null,
+      "harmonic_std": null
+    },
+    {
+      "system": "mask_peak",
+      "seeds": 1,
+      "seen": 0.18386627906976744,
+      "unseen": 0.13810316139767054,
+      "harmonic": 0.15773245049030837,
+      "seen_std": null,
+      "unseen_std": null,
+      "harmonic_std": null
+    },
+    {
+      "system": "oracle_mask",
+      "seeds": 1,
+      "seen": 0.46584302325581395,
+      "unseen": 0.415973377703827,
+      "harmonic": 0.4394980534555792,
+      "seen_std": null,
+      "unseen_std": null,
+      "harmonic_std": null
+    },
+    {
+      "system": "ours",
+      "seeds": 1,
+      "seen": 0.376453488372093,
+      "unseen": 0.3577371048252912,
+      "harmonic": 0.3668567325144362,
+      "seen_std": null,
+      "unseen_std": null,
+      "harmonic_std": null
+    },
+    {
+      "system": "prior",
+      "seeds": 1,
+      "seen": 0.33648255813953487,
+      "unseen": 0.3227953410981697,
+      "harmonic": 0.32949686999616656,
+      "seen_std": null,
+      "unseen_std": null,
+      "harmonic_std": null
+    },
+    {
+      "system": "soft",
+      "seeds": 1,
+      "seen": 0.376453488372093,
+      "unseen": 0.3577371048252912,
+      "harmonic": 0.3668567325144362,
+      "seen_std": null,
+      "unseen_std": null,
+      "harmonic_std": null
+    },
+    {
+      "system": "zero_shot_hard",
+      "seeds": 1,
+      "seen": 0.32049418604651164,
+      "unseen": 0.33277870216306155,
+      "harmonic": 0.32652094157977646,
+      "seen_std": null,
+      "unseen_std": null,
+      "harmonic_std": null
+    }
+  ]
+}

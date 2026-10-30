@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "purpose": "benchmark",
+  "system": "mask_peak",
+  "split": "test_seen",
+  "count": 1376,
+  "success_rate": 0.18386627906976744,
+  "grounding_miou": 0.5547272170422132,
+  "decomposition": {
+    "pointing_accuracy": 0.7194767441860465,
+    "inside_count": 990,
+    "outside_count": 386,
+    "success_given_inside": 0.23333333333333334,
+    "success_given_outside": 0.05699481865284974
+  },
+  "target_scope": "instruction"
+}

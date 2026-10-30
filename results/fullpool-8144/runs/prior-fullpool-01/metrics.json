@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "purpose": "benchmark",
+  "task": "prior",
+  "epochs_completed": 15,
+  "global_step": 3825,
+  "best_val_score": 0.37,
+  "last_train_loss": 0.02975860453249195,
+  "last_validation": {
+    "val_union_success": 0.36
+  },
+  "parameters": {
+    "total": 1898308,
+    "trainable": 1898308
+  },
+  "effective_warmup_steps": 300,
+  "amp_enabled": true,
+  "amp_dtype": "torch.bfloat16"
+}

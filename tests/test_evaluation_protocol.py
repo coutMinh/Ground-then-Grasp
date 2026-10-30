@@ -38,7 +38,7 @@ def test_tables_require_paired_tests_and_exclude_debug_runs(tmp_path):
 
 
 def test_sweep_rejects_test_split_before_loading_checkpoints(tmp_path):
-    source = Path(__file__).resolve().parents[1] / "data/manifests/smoke/test_seen.csv"
+    source = Path(__file__).resolve().parent / "fixtures/smoke_test_seen.csv"
     rows = read_manifest(source)
     manifest = tmp_path / "test.csv"
     write_manifest(manifest, rows)

@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "purpose": "benchmark",
+  "system": "ft_hard",
+  "split": "test_unseen",
+  "count": 601,
+  "success_rate": 0.33444259567387685,
+  "grounding_miou": 0.5718839080516839,
+  "decomposition": {
+    "pointing_accuracy": 0.6871880199667221,
+    "inside_count": 413,
+    "outside_count": 188,
+    "success_given_inside": 0.45036319612590797,
+    "success_given_outside": 0.0797872340425532
+  },
+  "target_scope": "instruction"
+}

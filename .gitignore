@@ -14,8 +14,9 @@ data/*
 !data/manifests/**
 !data/manifests/README.md
 results/*
-!results/registry.csv
 !results/README.md
+!results/fullpool-8144/
+!results/fullpool-8144/**
 *.pt
 *.pth
 *.zip
@@ -26,3 +27,7 @@ paper/*.log
 paper/*.out
 paper/*.bbl
 paper/*.blg
+
+# editor backups
+*.bkp
+.$*

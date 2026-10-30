@@ -1,0 +1,133 @@
+{
+  "run_id": "ours-full-seen-01",
+  "system": "ours",
+  "split": "test_seen",
+  "selection": "mixed",
+  "seed": 42,
+  "count": 6,
+  "selection_note": "Seeded successes and failures for illustration; not a representative accuracy estimate.",
+  "population": {
+    "failure": 858,
+    "success": 518
+  },
+  "predictions_sha256": "72765f8758326cf69d6df5f9bdcef81b2e75ff55d11c717d785f46774cb8bbf3",
+  "manifest_sha256": "8cce270b88e4443ad3f7498a6ca4185ea480710536bf5b35733c691255210de3",
+  "evaluation_config_sha256": "20f46970c47817ee03605a61b730c507fc7260ca88e73af3cd79e2aa21b683d1",
+  "contact_sheet": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-seen-01/contact_sheet.png",
+  "samples": [
+    {
+      "sample_id": "0e29736ffab1994801dfc99139f5e75d757d3117d5949492d2dc626abe4021b0_0_0",
+      "instruction": "Grip scissors on its cutting blades.",
+      "success": true,
+      "grasp_iou": 0.4077306733167082,
+      "angle_deg": 18.784611703738527,
+      "prediction": {
+        "x": 169.0,
+        "y": 89.14285714285714,
+        "w": 70.21469170706612,
+        "h": 35.10734585353306,
+        "theta": 0.004570433869957924
+      },
+      "gt_count": 9,
+      "recomputed_success": true,
+      "recomputed_iou": 0.4077306733167082,
+      "matches_saved_metric": true,
+      "figure": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-seen-01/01-0e29736ffab1994801dfc99139f5e75d757d3117d5949492d2dc626abe4021b0_0_0.png"
+    },
+    {
+      "sample_id": "c2dd93458d8c1cb89d1105ba55630045277276114e892ba4901297bac06c5ce3_0_0",
+      "instruction": "Take hold of mug on its handle.",
+      "success": true,
+      "grasp_iou": 0.3789558556742592,
+      "angle_deg": 11.796130109051724,
+      "prediction": {
+        "x": 37.142857142857146,
+        "y": 135.57142857142858,
+        "w": 63.328866141183035,
+        "h": 31.664433070591517,
+        "theta": -0.0340687558054924
+      },
+      "gt_count": 8,
+      "recomputed_success": true,
+      "recomputed_iou": 0.3789558556742592,
+      "matches_saved_metric": true,
+      "figure": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-seen-01/02-c2dd93458d8c1cb89d1105ba55630045277276114e892ba4901297bac06c5ce3_0_0.png"
+    },
+    {
+      "sample_id": "2dd5fab2c075a9c3bc4a699e761cc68fd97cb19de266ed677bcc65492d7865dd_0_1",
+      "instruction": "Take marble by its material.",
+      "success": true,
+      "grasp_iou": 0.41173009023146334,
+      "angle_deg": 9.157596095236698,
+      "prediction": {
+        "x": 352.8571428571429,
+        "y": 224.71428571428572,
+        "w": 87.29720524379185,
+        "h": 43.648602621895925,
+        "theta": -0.06942973285913467
+      },
+      "gt_count": 11,
+      "recomputed_success": true,
+      "recomputed_iou": 0.41173009023146334,
+      "matches_saved_metric": true,
+      "figure": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-seen-01/03-2dd5fab2c075a9c3bc4a699e761cc68fd97cb19de266ed677bcc65492d7865dd_0_1.png"
+    },
+    {
+      "sample_id": "659c87d4289ca9969cd01ffb47cdf7ceacadb9f6e7f1db96759b67ca4af846a8_0_0",
+      "instruction": "Pick up mug by its handle.",
+      "success": false,
+      "grasp_iou": 0.1416058394160584,
+      "angle_deg": 13.79034554024675,
+      "prediction": {
+        "x": 310.14285714285717,
+        "y": 230.2857142857143,
+        "w": 35.65273066929409,
+        "h": 17.826365334647043,
+        "theta": -0.036472734063863754
+      },
+      "gt_count": 10,
+      "recomputed_success": false,
+      "recomputed_iou": 0.1416058394160584,
+      "matches_saved_metric": true,
+      "figure": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-seen-01/04-659c87d4289ca9969cd01ffb47cdf7ceacadb9f6e7f1db96759b67ca4af846a8_0_0.png"
+    },
+    {
+      "sample_id": "c46528ba8c4ed32f6e171b7eb75dcb3b5e1ef46ff695b4e86c67e922d88ddcf0_0_1",
+      "instruction": "Grasp mug at its rim.",
+      "success": false,
+      "grasp_iou": 0.0,
+      "angle_deg": 20.123418506332193,
+      "prediction": {
+        "x": 280.42857142857144,
+        "y": 170.85714285714286,
+        "w": 25.52773543766567,
+        "h": 12.763867718832834,
+        "theta": -0.009351762011647224
+      },
+      "gt_count": 1,
+      "recomputed_success": false,
+      "recomputed_iou": 0.0,
+      "matches_saved_metric": true,
+      "figure": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-seen-01/05-c46528ba8c4ed32f6e171b7eb75dcb3b5e1ef46ff695b4e86c67e922d88ddcf0_0_1.png"
+    },
+    {
+      "sample_id": "4daf4ff155ca7f33e127e04f60d9b225e4c5e89c9fe92409fac3d572d0c0e31b_0_0",
+      "instruction": "Grasp scissors at its cutting blades.",
+      "success": false,
+      "grasp_iou": 0.0,
+      "angle_deg": 2.8999529827042863,
+      "prediction": {
+        "x": 293.42857142857144,
+        "y": 172.71428571428572,
+        "w": 77.81690979003906,
+        "h": 38.90845489501953,
+        "theta": -0.03464375436306
+      },
+      "gt_count": 8,
+      "recomputed_success": false,
+      "recomputed_iou": 0.0,
+      "matches_saved_metric": true,
+      "figure": "/home/marimo/g2g-workspace/artifacts/gallery/ours-full-seen-01/06-4daf4ff155ca7f33e127e04f60d9b225e4c5e89c9fe92409fac3d572d0c0e31b_0_0.png"
+    }
+  ]
+}

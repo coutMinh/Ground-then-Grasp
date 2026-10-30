@@ -1,0 +1,13 @@
+% Copy the PDF to figures/ in the paper project, then replace its existing
+% figure environment with this one. Use figure, not figure*, for one column.
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/g2g_pipeline_compact.pdf}
+  \caption{Ground Then Grasp. The experts are trained independently, with
+  frozen CLIP encoders. Quality $Q$ and part probabilities $P$ are fused;
+  angle/width maps come from the prior. Insets schematically illustrate
+  fusion, Gaussian smoothing and five decoded candidates. Reranking selects
+  B over higher-center-quality A by part coverage; C is a weak spoon grasp.
+  Bars indicate relative illustrative ranking scores.}
+  \label{fig:method}
+\end{figure}

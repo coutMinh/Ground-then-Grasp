@@ -1,0 +1,32 @@
+{
+  "seed": 42,
+  "ga_revision": "6b4917455d0910c23f936a6c7a968418ba518897",
+  "gapp_revision": "9b30c841d4f04e4a62e9f7abb3b503337a6200a7",
+  "protocol": "official object lists; actual part entries; all test images excluded from train pool",
+  "union_policy": "all parts of permitted train objects only; one training item per image",
+  "instruction_source": "native instruction_member pickle string, not duplicated in CSV",
+  "available_train_pool_images": 8344,
+  "splits": {
+    "train": {
+      "rows": 27870,
+      "images": 8144,
+      "sha256": "752bad35df47feb599241454e7e57b3283a475ce19ea7ebd4bc0bdbbd04fcfdd"
+    },
+    "val": {
+      "rows": 662,
+      "images": 200,
+      "sha256": "45eb0a2916ccdf39536ff32fbcab92ffdcb5ad7463222706c7d42b2623ea7c45"
+    },
+    "test_seen": {
+      "rows": 1376,
+      "images": 412,
+      "sha256": "8cce270b88e4443ad3f7498a6ca4185ea480710536bf5b35733c691255210de3"
+    },
+    "test_unseen": {
+      "rows": 601,
+      "images": 193,
+      "sha256": "c35f3f1f92f19e69c6c1a28cf2fe956ea164c51d0403c790c404881847f051fb"
+    }
+  },
+  "all_sha256": "f89068991f954db7d073e026632e300f08a15020287c0ef9e0af9b62b311c75a"
+}
