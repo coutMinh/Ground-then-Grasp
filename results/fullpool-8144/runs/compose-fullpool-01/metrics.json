@@ -1,0 +1,704 @@
+{
+  "status": "completed",
+  "purpose": "benchmark",
+  "count": 662,
+  "best": {
+    "purpose": "benchmark",
+    "selection_split": "val",
+    "manifest_sha256": "45eb0a2916ccdf39536ff32fbcab92ffdcb5ad7463222706c7d42b2623ea7c45",
+    "prior_sha256": "d50893054c2829f8877816a1667a7a54dd9effe415e0e46f9109faff1adcda2d",
+    "grounder_sha256": "ec5d4c3fe5cb19f6fb21410c6c878a7ab38cdc3087ee964a739b16a8bb336dd2",
+    "tie_rule": "first grid entry with maximum success rate",
+    "git_commit": "99293738b9b87afc7cdce70642de18533fd4fa65",
+    "git_dirty": false,
+    "composition": {
+      "mode": "soft",
+      "alpha": 0.75,
+      "temperature": 2,
+      "rerank_weight": 0,
+      "top_k": 10,
+      "min_distance": 5,
+      "sigma": 2.0,
+      "width_scale": null,
+      "height_ratio": 0.5,
+      "epsilon": 1e-06
+    }
+  },
+  "candidates": [
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0,
+        "temperature": 0.5,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.2084592145015106
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0,
+        "temperature": 0.5,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.19184290030211482
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0,
+        "temperature": 0.5,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.18580060422960726
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0,
+        "temperature": 1,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.19939577039274925
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0,
+        "temperature": 1,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.1555891238670695
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0,
+        "temperature": 1,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.1510574018126888
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0,
+        "temperature": 2,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.18429003021148035
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0,
+        "temperature": 2,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.13444108761329304
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0,
+        "temperature": 2,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.1268882175226586
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.25,
+        "temperature": 0.5,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3821752265861027
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.25,
+        "temperature": 0.5,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.35347432024169184
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.25,
+        "temperature": 0.5,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3474320241691843
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.25,
+        "temperature": 1,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.37613293051359514
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.25,
+        "temperature": 1,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3459214501510574
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.25,
+        "temperature": 1,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3368580060422961
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.25,
+        "temperature": 2,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3806646525679758
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.25,
+        "temperature": 2,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.33534743202416917
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.25,
+        "temperature": 2,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3293051359516616
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.5,
+        "temperature": 0.5,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3972809667673716
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.5,
+        "temperature": 0.5,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3851963746223565
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.5,
+        "temperature": 0.5,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3640483383685801
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.5,
+        "temperature": 1,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3972809667673716
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.5,
+        "temperature": 1,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3806646525679758
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.5,
+        "temperature": 1,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3595166163141994
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.5,
+        "temperature": 2,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.4033232628398791
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.5,
+        "temperature": 2,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.37462235649546827
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.5,
+        "temperature": 2,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.35196374622356497
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.75,
+        "temperature": 0.5,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.4033232628398791
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.75,
+        "temperature": 0.5,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3821752265861027
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.75,
+        "temperature": 0.5,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3716012084592145
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.75,
+        "temperature": 1,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.4108761329305136
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.75,
+        "temperature": 1,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.38972809667673713
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.75,
+        "temperature": 1,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.38368580060422963
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.75,
+        "temperature": 2,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.4214501510574018
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.75,
+        "temperature": 2,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3972809667673716
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 0.75,
+        "temperature": 2,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.38821752265861026
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 1,
+        "temperature": 0.5,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3217522658610272
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 1,
+        "temperature": 0.5,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.37613293051359514
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 1,
+        "temperature": 0.5,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.37009063444108764
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 1,
+        "temperature": 1,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3217522658610272
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 1,
+        "temperature": 1,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3821752265861027
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 1,
+        "temperature": 1,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.37009063444108764
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 1,
+        "temperature": 2,
+        "rerank_weight": 0,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.3217522658610272
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 1,
+        "temperature": 2,
+        "rerank_weight": 0.5,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.38972809667673713
+    },
+    {
+      "composition": {
+        "mode": "soft",
+        "alpha": 1,
+        "temperature": 2,
+        "rerank_weight": 1,
+        "top_k": 10,
+        "min_distance": 5,
+        "sigma": 2.0,
+        "width_scale": null,
+        "height_ratio": 0.5,
+        "epsilon": 1e-06
+      },
+      "success_rate": 0.37613293051359514
+    }
+  ]
+}

@@ -6,7 +6,7 @@ import argparse
 import json
 
 
-def main(argv: list[str] | None = None) -> None:
+def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="g2g", description="Ground First, Then Grasp")
     subparsers = parser.add_subparsers(dest="command", required=True)
     probe_parser = subparsers.add_parser("probe", help="Save a CPU/GPU environment report")
@@ -119,7 +119,11 @@ def main(argv: list[str] | None = None) -> None:
     predictions_parser.add_argument(
         "--selection", choices=["mixed", "random", "success", "failure"], default="mixed"
     )
-    arguments = parser.parse_args(argv)
+    return parser
+
+
+def main(argv: list[str] | None = None) -> None:
+    arguments = build_parser().parse_args(argv)
     if arguments.command == "probe":
         from g2g.utils.environment import probe
 

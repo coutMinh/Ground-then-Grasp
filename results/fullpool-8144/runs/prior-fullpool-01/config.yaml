@@ -1,0 +1,25 @@
+amp: true
+amp_dtype: bf16
+batch_size: 32
+channel_size: 32
+cpu_threads: 2
+data_root: /home/marimo/g2g-workspace/artifacts/ga_subset
+device: cuda
+epochs: 15
+git_commit: 99293738b9b87afc7cdce70642de18533fd4fa65
+git_dirty: false
+grad_clip: 1.0
+learning_rate: 0.001
+manifest: /home/marimo/g2g-workspace/artifacts/manifests/fullpool-8144/train.csv
+manifest_hashes:
+  train: 752bad35df47feb599241454e7e57b3283a475ce19ea7ebd4bc0bdbbd04fcfdd
+  val: 45eb0a2916ccdf39536ff32fbcab92ffdcb5ad7463222706c7d42b2623ea7c45
+num_workers: 0
+purpose: benchmark
+resolution: 224
+resume: null
+seed: 42
+task: prior
+val_manifest: /home/marimo/g2g-workspace/artifacts/manifests/fullpool-8144/val.csv
+warmup_steps: 300
+weight_decay: 0.0001

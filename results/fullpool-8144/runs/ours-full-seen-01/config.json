@@ -1,0 +1,52 @@
+{
+  "system": "ours",
+  "purpose": "benchmark",
+  "split": "test_seen",
+  "manifest": "/home/marimo/g2g-workspace/artifacts/manifests/fullpool-8144/test_seen.csv",
+  "data_root": "/home/marimo/g2g-workspace/artifacts/ga_subset",
+  "prior_checkpoint": "/home/marimo/g2g-workspace/artifacts/results/runs/prior-fullpool-01/best.pt",
+  "prior_sha256": "d50893054c2829f8877816a1667a7a54dd9effe415e0e46f9109faff1adcda2d",
+  "grounder_checkpoint": "/home/marimo/g2g-workspace/artifacts/results/runs/grounder-fullpool-01/best.pt",
+  "composition": {
+    "mode": "soft",
+    "alpha": 0.75,
+    "temperature": 2,
+    "rerank_weight": 0,
+    "top_k": 10,
+    "min_distance": 5,
+    "sigma": 2.0,
+    "width_scale": null,
+    "height_ratio": 0.5,
+    "epsilon": 1e-06
+  },
+  "resolution": 224,
+  "val_selection": {
+    "purpose": "benchmark",
+    "selection_split": "val",
+    "manifest_sha256": "45eb0a2916ccdf39536ff32fbcab92ffdcb5ad7463222706c7d42b2623ea7c45",
+    "prior_sha256": "d50893054c2829f8877816a1667a7a54dd9effe415e0e46f9109faff1adcda2d",
+    "grounder_sha256": "ec5d4c3fe5cb19f6fb21410c6c878a7ab38cdc3087ee964a739b16a8bb336dd2",
+    "tie_rule": "first grid entry with maximum success rate",
+    "git_commit": "99293738b9b87afc7cdce70642de18533fd4fa65",
+    "git_dirty": false,
+    "composition": {
+      "mode": "soft",
+      "alpha": 0.75,
+      "temperature": 2,
+      "rerank_weight": 0,
+      "top_k": 10,
+      "min_distance": 5,
+      "sigma": 2.0,
+      "width_scale": null,
+      "height_ratio": 0.5,
+      "epsilon": 1e-06
+    }
+  },
+  "target_scope": "instruction",
+  "iou_mode": "pixel",
+  "iou_threshold": 0.25,
+  "angle_boundary": "<=30 degrees",
+  "git_commit": "99293738b9b87afc7cdce70642de18533fd4fa65",
+  "git_dirty": false,
+  "grounder_sha256": "ec5d4c3fe5cb19f6fb21410c6c878a7ab38cdc3087ee964a739b16a8bb336dd2"
+}

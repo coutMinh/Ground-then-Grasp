@@ -1,0 +1,10 @@
+{
+  "purpose": "benchmark",
+  "selection_split": "val",
+  "manifest_sha256": "45eb0a2916ccdf39536ff32fbcab92ffdcb5ad7463222706c7d42b2623ea7c45",
+  "prior_sha256": "d50893054c2829f8877816a1667a7a54dd9effe415e0e46f9109faff1adcda2d",
+  "grounder_sha256": "ec5d4c3fe5cb19f6fb21410c6c878a7ab38cdc3087ee964a739b16a8bb336dd2",
+  "tie_rule": "first grid entry with maximum success rate",
+  "git_commit": "99293738b9b87afc7cdce70642de18533fd4fa65",
+  "git_dirty": false
+}

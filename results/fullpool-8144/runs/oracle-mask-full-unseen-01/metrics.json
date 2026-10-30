@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "purpose": "benchmark",
+  "system": "oracle_mask",
+  "split": "test_unseen",
+  "count": 601,
+  "success_rate": 0.415973377703827,
+  "grounding_miou": null,
+  "decomposition": {
+    "pointing_accuracy": 1.0,
+    "inside_count": 601,
+    "outside_count": 0,
+    "success_given_inside": 0.415973377703827,
+    "success_given_outside": null
+  },
+  "target_scope": "instruction"
+}
