@@ -52,18 +52,5 @@ session, set the `HF_TOKEN` secret, and press the five buttons in order.
 | 5. Gallery | draw saved predictions against ground truth | 
 
 
-## Checkpoints
-
-| File on [HF](https://huggingface.co/coutMinh/ground-then-grasp) | Content | SHA-256 |
-|---|---|---|
-| `prior/best.pt` | R1 prior, best val epoch (15 epochs) | `d5089305…` |
-| `grounder/best.pt` | R2 grounder, best val mIoU 0.578 (epoch 8 of 10), full state | `ec5d4c3f…` |
-| `grounder/decoder_only.pt` | decoder weights only (1,127,009 params, key `decoder_state`) | `b8e2e422…` |
-| `composition/best_compose.json` | α, τ, λ chosen on val, plus the two checkpoint hashes | – |
-
-`evaluate` checks that `best_compose.json` matches the checkpoint hashes. Use the full
-`best.pt` files with `g2g.eval.evaluate.load_expert`; `decoder_only.pt` needs the
-pretrained CLIPSeg weights to be loaded first.
-
 
 
