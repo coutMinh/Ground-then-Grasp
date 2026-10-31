@@ -40,17 +40,9 @@ More examples: [Seen contact sheet](docs/figs/gallery/contact_sheet_seen.png) ·
 
 ## Reproduce on molab
 
+This project was developed and evaluated on Molab, a free GPU computing platform, using an NVIDIA RTX PRO 6000 Blackwell GPU for acceleration. 
+
 Upload [`notebooks/reproduce_molab.py`](notebooks/reproduce_molab.py) to a GPU molab
-session, set the `HF_TOKEN` secret, and press the five buttons in order.
-
-| Step | What it does |
-|---|---|
-| 1. Setup | clone this repo, `pip install -e`, GPU probe, `pytest`, pinned LGD split lists | 
-| 2. Data | build `fullpool-8144` manifests, check them against the committed SHA-256, download, validate | 
-| 3. Checkpoints | **HF mode** (default): download and hash-check the released checkpoints. **Train mode**: R1 prior (~25 min) ∥ R2 grounder (~65 min), then val sweep (~10 min) | 
-| 4. Evaluate | 7 systems × Seen/Unseen, `make-tables`, side-by-side with the committed table | 
-| 5. Gallery | draw saved predictions against ground truth | 
-
-
+session.
 
 
